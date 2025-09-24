@@ -90,15 +90,21 @@ const StyledHero = styled.header`
       background-size: cover;
     }
   }
+
+  .heavy-weight {
+    font-weight: 500;
+    margin-top: 8rem;
+  }
 `;
 // #endregion
 
 // #region component
 const propTypes = {
+  avatar_url: PropTypes.string.isRequired,
   name: PropTypes.string,
 };
 
-const Hero = ({ name }) => {
+const Hero = ({ name, avatar_url }) => {
   const { showBoundary } = useErrorBoundary();
 
   return (
@@ -114,19 +120,32 @@ const Hero = ({ name }) => {
             </div>
           </Col>
           <Col className="d-none d-md-block">
-            <img
+          {/* TEmporarily swap out icons while working on page */}
+            {/* <img
               src={Logo}
               alt="React Logo"
               className="w-75 mx-auto hero-img"
+            /> */}
+            <img
+              src={avatar_url}
+              alt="avatar"
+              className="mx-auto hero-img rounded-circle border border-primary-subtle"
+              loading="lazy"
+              style={{ width: "15rem", height: "15rem" }}
             />
           </Col>
         </Row>
         <Row className="align-items-end down-container">
-          <Col className="m-4 text-center">
+          {/* Temporarily add Container for wip blurb and comment out down arrow link
+           */}
+           <Container className="d-flex justify-content-center">
+              <h1 className="display-4 heavy-weight">Under Construction</h1>
+           </Container>
+          {/* <Col className="m-4 text-center">
             <Link to={"About"} className="link-icons">
               <Icon icon="fa6-solid:circle-chevron-down" />
             </Link>
-          </Col>
+          </Col> */}
         </Row>
         <Button
           className="d-none"

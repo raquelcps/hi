@@ -4,12 +4,13 @@ import { useGetUsersQuery } from "../app/apiSlice";
 // Components
 import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
+// import Skills from "../components/Skills";
+// import Projects from "../components/Projects";
+// import Contact from "../components/Contact";
 import BackToTop from "../components/BackToTop";
 // Config
-import { filteredProjects, moreInfo } from "../config";
+// import { filteredProjects, moreInfo } from "../config";
+import { moreInfo } from "../config";
 // Utils
 import { updateTitle } from "../utils";
 
@@ -23,16 +24,20 @@ const Home = () => {
 
   return (
     <>
-      <Hero name={userData.name} />
+      {/* <Hero name={userData.name} /> */}
+      <Hero
+        name="Raquel"
+        avatar_url={userData.avatar_url} />
       <main>
+        {/* Temporarily comment out components while working on content */}
         <AboutMe
           avatar_url={userData.avatar_url}
           bio={userData.bio}
           moreInfo={moreInfo}
         />
-        <Skills />
+        {/* <Skills />
         <Projects filteredProjects={filteredProjects} />
-        <Contact />
+        <Contact /> */}
       </main>
       <BackToTop />
     </>

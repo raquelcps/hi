@@ -2,10 +2,11 @@
 import { Icon } from "@iconify/react";
 
 // Navbar Logo image (add your image to the src/images directory and uncomment the line below to import your image)
-// import newLogo from "./images/yourFileName"
+import myLogo from "./images/raquelcpsCodeLogo.svg"
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/hero-light.jpg";
+// import HeroLight from "./images/hero-light.jpg";
+import HeroLight2 from "./images/hero-light2.jpg";
 import HeroDark from "./images/hero-dark.jpg";
 
 // Projects Images (add your images to the images directory and import below)
@@ -18,7 +19,8 @@ import Logo from "./images/logo.svg";
 export const githubUsername = "raquelcps";
 
 // Navbar Logo image
-export const navLogo = null;
+// export const navLogo = null;
+export const navLogo = myLogo;
 
 /* Main
  ************************************************************** 
@@ -27,7 +29,8 @@ export const navLogo = null;
 export const Blog = null;
 
 // Hero images (imported above - lines 8-9)
-export { HeroLight as Light };
+// export { HeroLight as Light };
+export { HeroLight2 as Light };
 export { HeroDark as Dark };
 
 /* About Me
