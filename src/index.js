@@ -2,6 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // Styles
 import "./custom.scss";
+// Fonts
+import "./fonts/MonaspaceNeon-Regular.woff";
+import "./fonts/MonaspaceNeon-SemiBold.woff";
+import "./fonts/MonaspaceKrypton-Medium.woff";
+import "./fonts/MonaspaceKrypton-SemiBold.woff";
 // State
 import { Provider } from "react-redux";
 import { store } from "./app/store";
