@@ -43,6 +43,10 @@ const StyledDiv = styled.div`
     background: ${({ theme }) =>
       theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
   }
+
+  .nav-font {
+    font-family: "Monaspace Neon Regular", monospace;
+  }
 `;
 // #endregion
 
@@ -70,7 +74,7 @@ const NavBar = ({ Logo = defaultLogo, callBack, closeDelay = 125 }) => {
         variant={theme === "light" ? "light" : "dark"}
         fixed="top"
       >
-        <Container>
+        <Container className="nav-font">
           <Navbar.Brand>
             <img
               alt="Logo"

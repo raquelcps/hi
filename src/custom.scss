@@ -33,3 +33,10 @@ $blue: #61dbfb;
   font-weight: 600;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Monaspace Krypton SemiBoldItalic';
+  src: url('./fonts/MonaspaceKrypton-SemiBoldItalic.woff2') format('woff2'),
+       url('./fonts/MonaspaceKrypton-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}

@@ -12,6 +12,10 @@ Variables
   --nav-height: 55px;
   --min-footer-height: 11vh;
   --card-height: 29rem;
+  --primary-blue: #569cd6;
+  --primary-green: #4ec9b0;
+  --primary-orange: #ce9178;
+  --primary-yellow: rgb(241, 225, 112);
 }
 
 /*
@@ -39,7 +43,25 @@ a:hover {
 }
 
 .title {
-  font-family: "Monaspace Krypton SemiBold", monospace;
+  font-family: "Monaspace Krypton SemiBoldItalic", monospace;
+  text-transform: uppercase;
+}
+
+.text-font {
+  font-family: "Monaspace Neon SemiBold", monospace;
+}
+
+.text-blue {
+  color: var(--primary-blue);
+}
+.text-green {
+  color: var(--primary-green);
+}
+.text-orange {
+  color: var(--primary-orange);
+}
+.text-yellow {
+  color: var(--primary-yellow);
 }
 
 .link-icons {

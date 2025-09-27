@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Title from "./Title";
 // Config
-import { skillData, resume } from "../config";
+import { experienceList, skillsList, skillData, resume } from "../config";
 
 // #region component
 const Skills = () => {
@@ -16,18 +16,43 @@ const Skills = () => {
   return (
     <Element name={"Skills"} id="skills">
       <section className="section">
-        <Container className="text-center">
-          <Container className="d-flex justify-content-center">
-            <Title size={"h2"} text={"Skills"} />
+        <Container>
+          <Container className="d-flex justify-content-center text-orange">
+            <Title size={"h2"} text={"Skills"} color={"orange"} />
           </Container>
+          <Row className="align-items-start mt-5 text-font text-orange">
+            <Col className="d-flex flex-column">
+              <ul>
+                {skillsList.map((skill, index) => {
+                  return (
+                    <li>
+                      <h5 key={index}>{skill}</h5>
+                    </li>
+                  )
+                })}
+              </ul>
+            </Col>
+            <Col className="d-flex flex-column">
+              <ul>
+                {experienceList.map((experience, index) => {
+                  return (
+                    <li>
+                      <h5 key={index}>{experience}</h5>
+                    </li>
+                  )
+                })}
+              </ul>
+            </Col>
+          </Row>
+          {/* Keep this icons for now. Maybe make them smaller and just run accross the bottom */}
           <Row className="mt-3 align-items-center">
             {skillData.map((skills) => {
               return (
-                <Col xs={4} key={skills.id} className="my-md-5">
-                  <figure>
-                    {skills.skill}
-                    <figcaption>{skills.name}</figcaption>
-                  </figure>
+                <Col xs={1} key={skills.id} className="my-md-5">
+                  {/* <ul> */}
+                    <p>{skills.skill}</p>
+                    {/* <figcaption>{skills.name}</figcaption> */}
+                  {/* </ul> */}
                 </Col>
               );
             })}

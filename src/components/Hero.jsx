@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
 // Images
 import Logo from "../images/logo.svg";
+import FloppyLogo from "../images/floppyLogo.png";
 import { Light, Dark } from "../config";
 // Components
 import { useErrorBoundary } from "react-error-boundary";
@@ -95,16 +96,19 @@ const StyledHero = styled.header`
     font-weight: 500;
     margin-top: 8rem;
   }
+
+  .w-35 {
+    width: 35% !important
+  }
 `;
 // #endregion
 
 // #region component
 const propTypes = {
-  avatar_url: PropTypes.string.isRequired,
-  name: PropTypes.string,
+  name: PropTypes.string
 };
 
-const Hero = ({ name, avatar_url }) => {
+const Hero = ({ name }) => {
   const { showBoundary } = useErrorBoundary();
 
   return (
@@ -120,32 +124,19 @@ const Hero = ({ name, avatar_url }) => {
             </div>
           </Col>
           <Col className="d-none d-md-block">
-          {/* TEmporarily swap out icons while working on page */}
-            {/* <img
-              src={Logo}
-              alt="React Logo"
-              className="w-75 mx-auto hero-img"
-            /> */}
             <img
-              src={avatar_url}
-              alt="avatar"
-              className="mx-auto hero-img rounded-circle border border-primary-subtle"
-              loading="lazy"
-              style={{ width: "15rem", height: "15rem" }}
+              src={FloppyLogo}
+              alt="Floppy Disk"
+              className="w-35 mx-auto hero-img"
             />
           </Col>
         </Row>
         <Row className="align-items-end down-container">
-          {/* Temporarily add Container for wip blurb and comment out down arrow link
-           */}
-           <Container className="d-flex justify-content-center">
-              <h1 className="display-4 heavy-weight">Under Construction</h1>
-           </Container>
-          {/* <Col className="m-4 text-center">
+          <Col className="m-4 text-center">
             <Link to={"About"} className="link-icons">
               <Icon icon="fa6-solid:circle-chevron-down" />
             </Link>
-          </Col> */}
+          </Col>
         </Row>
         <Button
           className="d-none"

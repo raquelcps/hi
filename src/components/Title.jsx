@@ -13,14 +13,9 @@ const TitleDiv = styled.div`
 
   .underline {
     height: 0.25rem;
-    width: 75%;
+    width: 95%;
     min-width: 3rem;
     border-radius: 0.25rem;
-    margin: 0 auto 0 auto;
-    background: ${({ theme }) =>
-      theme.name === "light"
-        ? "linear-gradient(to right, var(--bs-primary), #D3D3D3)"
-        : "linear-gradient(to left, var(--bs-primary), var(--bs-light))"};
   }
 `;
 // #endregion
@@ -29,9 +24,13 @@ const TitleDiv = styled.div`
 const propTypes = {
   size: PropTypes.oneOf(["h1", "h2"]),
   text: PropTypes.string.isRequired,
+  color: PropTypes.string
 };
 
-const Title = ({ size = "h1", text }) => {
+const Title = ({ size = "h1", text, color }) => {
+  const underlineStyles = {
+    background: `var(--primary-${color})`
+  };
   return (
     <TitleDiv>
       {size === "h1" ? (
@@ -39,7 +38,7 @@ const Title = ({ size = "h1", text }) => {
       ) : (
         <h2 className="title">{text}</h2>
       )}
-      <div className="underline" />
+      <div className="underline" style={underlineStyles} />
     </TitleDiv>
   );
 };

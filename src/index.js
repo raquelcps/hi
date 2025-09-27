@@ -7,6 +7,7 @@ import "./fonts/MonaspaceNeon-Regular.woff";
 import "./fonts/MonaspaceNeon-SemiBold.woff";
 import "./fonts/MonaspaceKrypton-Medium.woff";
 import "./fonts/MonaspaceKrypton-SemiBold.woff";
+import "./fonts/MonaspaceKrypton-SemiBoldItalic.woff";
 // State
 import { Provider } from "react-redux";
 import { store } from "./app/store";

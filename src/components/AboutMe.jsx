@@ -26,21 +26,19 @@ const propTypes = {
   bio: PropTypes.string,
   moreInfo: PropTypes.string,
 };
-
 const AboutMe = ({ avatar_url, bio, moreInfo }) => {
   return (
     <Element name={"About"} id="about">
       <StyledAboutMe className="section">
         <Container>
-          <Container className="d-flex justify-content-center">
-            {/* <Title size={"h2"} text={"About Me"} /> */}
-            <h2>Really, check back soon</h2>
+          <Container className="d-flex justify-content-center text-green">
+            <Title size={"h2"} text={"About Me"} color={"green"} />
           </Container>
-          {/* <Row className="align-items-center mt-5">
+          <Row className="align-items-center mt-5">
             <Col className="d-flex flex-column text-center">
               <Container>
-                {bio && <p>{bio}</p>}
-                {moreInfo && <p>{moreInfo}</p>}
+                {bio && <p className="text-font text-green">{bio}</p>}
+                {moreInfo && <p className="text-font text-green">{moreInfo}</p>}
               </Container>
             </Col>
             <Col className="d-none d-md-block text-center">
@@ -52,7 +50,7 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
                 style={{ width: "15rem", height: "15rem" }}
               />
             </Col>
-          </Row> */}
+          </Row>
         </Container>
       </StyledAboutMe>
     </Element>

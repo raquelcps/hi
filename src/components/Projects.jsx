@@ -39,7 +39,8 @@ const Projects = () => {
         )}
         {mainProjects.length !== 0 && (
           <>
-            <Row xs={1} md={2} lg={3} className="g-4 justify-content-center">
+            {/* <Row xs={1} md={2} lg={3} className="g-4 justify-content-center"> */}
+            <Row xs={1} md={2} lg={3} className="mt-5 align-items-center">
               {mainProjects.map((element) => {
                 return (
                   <Col key={element.id}>
@@ -54,7 +55,7 @@ const Projects = () => {
                 );
               })}
             </Row>
-            {projects.length > 3 && (
+            {/* {projects.length > 3 && (
               <Container className="text-center mt-5">
                 <Link to="/All-Projects">
                   <Button
@@ -67,7 +68,7 @@ const Projects = () => {
                   </Button>
                 </Link>
               </Container>
-            )}
+            )} */}
           </>
         )}
       </>
@@ -84,8 +85,8 @@ const Projects = () => {
     <Element name={"Projects"} id="projects">
       <section className="section">
         <Container>
-          <Container className="d-flex justify-content-center">
-            <Title size={"h2"} text={"Projects"} />
+          <Container className="d-flex justify-content-center text-yellow">
+            <Title size={"h2"} text={"Projects"} color={"yellow"} />
           </Container>
           {content}
         </Container>
