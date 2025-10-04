@@ -160,7 +160,7 @@ export const email =
   "rrodriguez.codes@gmail.com";
 
 export const instagramLink =
-  "https://chicagopublicskills.com";
+  "https://instagram.com/chicagopublicskills";
 // export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
 
 // Footer icons theme (light or dark)

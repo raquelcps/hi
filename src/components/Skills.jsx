@@ -45,14 +45,11 @@ const Skills = () => {
             </Col>
           </Row>
           {/* Keep this icons for now. Maybe make them smaller and just run accross the bottom */}
-          <Row className="mt-3 align-items-center text-orange flex-nowrap">
+          <Row className="mt-3 align-items-center text-orange">
             {skillData.map((skills) => {
               return (
                 <Col xs={1} key={skills.id} className="my-md-5">
-                  {/* <ul> */}
                     <p className="fs-6">{skills.skill}</p>
-                    {/* <figcaption>{skills.name}</figcaption> */}
-                  {/* </ul> */}
                 </Col>
               );
             })}
