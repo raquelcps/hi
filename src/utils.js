@@ -10,9 +10,8 @@ export const getPreferredTheme = () => {
     return storedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  // Always default to 'dark' theme if no theme is stored
+  return "dark";
 };
 
 export const setTheme = (theme) => {

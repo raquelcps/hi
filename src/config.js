@@ -84,38 +84,53 @@ export const skillData = [
   },
   {
     id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
-  },
-  {
-    id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
-  },
-  {
-    id: 6,
-    skill: <Icon icon="simple-icons:angular" className="display-4" />,
-    name: "Angular",
-  },
-  {
-    id: 7,
     skill: <Icon icon="ant-design:ruby-outlined" className="display-4" />,
     name: "Ruby",
   },
   {
+    id: 5,
+    skill: <Icon icon="simple-icons:angular" className="display-4" />,
+    name: "Angular",
+  },
+  {
+    id: 6,
+    skill: <Icon icon="file-icons:rspec" className="display-4" />,
+    name: "Rspec",
+  },
+  {
+    id: 7,
+    skill: <Icon icon="file-icons:cucumber" className="display-4" />,
+    name: "Cucumber",
+  },
+  {
     id: 8,
+    skill: <Icon icon="file-icons:jasmine" className="display-4" />,
+    name: "Jasmine",
+  },
+  {
+    id: 9,
+    skill: <Icon icon="cib:storybook" className="display-4" />,
+    name: "Storybook",
+  },
+  {
+    id: 10,
+    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
+    name: "BootStrap",
+  },
+  {
+    id: 11,
+    skill: <Icon icon="mdi:react" className="display-4" />,
+    name: "React",
+  },
+  {
+    id: 12,
     skill: <Icon icon="bi:git" className="display-4" />,
     name: "Git",
   },
   {
-    id: 9,
+    id: 13,
     skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
     name: "GitHub",
-  },
-  {
-    id: 10,
-    skill: <Icon icon="cib:storybook" className="display-4" />,
-    name: "Storybook",
   },
 ];
 

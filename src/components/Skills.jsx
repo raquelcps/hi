@@ -21,18 +21,7 @@ const Skills = () => {
             <Title size={"h2"} text={"Skills"} color={"orange"} />
           </Container>
           <Row className="align-items-start mt-5 text-font text-orange">
-            <Col className="d-flex flex-column">
-              <ul>
-                {skillsList.map((skill, index) => {
-                  return (
-                    <li>
-                      <h5 key={index}>{skill}</h5>
-                    </li>
-                  )
-                })}
-              </ul>
-            </Col>
-            <Col className="d-flex flex-column">
+            <Col xs={12} md={6} className="d-flex flex-column">
               <ul>
                 {experienceList.map((experience, index) => {
                   return (
@@ -43,14 +32,25 @@ const Skills = () => {
                 })}
               </ul>
             </Col>
+            <Col xs={12} md={6} className="d-flex flex-column">
+              <ul>
+                {skillsList.map((skill, index) => {
+                  return (
+                    <li>
+                      <h5 key={index}>{skill}</h5>
+                    </li>
+                  )
+                })}
+              </ul>
+            </Col>
           </Row>
           {/* Keep this icons for now. Maybe make them smaller and just run accross the bottom */}
-          <Row className="mt-3 align-items-center">
+          <Row className="mt-3 align-items-center text-orange flex-nowrap">
             {skillData.map((skills) => {
               return (
                 <Col xs={1} key={skills.id} className="my-md-5">
                   {/* <ul> */}
-                    <p>{skills.skill}</p>
+                    <p className="fs-6">{skills.skill}</p>
                     {/* <figcaption>{skills.name}</figcaption> */}
                   {/* </ul> */}
                 </Col>
