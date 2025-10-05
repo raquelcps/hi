@@ -62,6 +62,9 @@ const StyledHero = styled.header`
     z-index: -1;
   }
 
+  .name-container {
+    height: 50vh;
+  }
   .down-container {
     height: 10rem;
   }
@@ -114,7 +117,7 @@ const Hero = ({ name }) => {
   return (
     <StyledHero>
       <Container>
-        <Row className="align-items-center text-center">
+        <Row className="align-items-center text-center name-container">
           <Col>
             <h1 className="mb-3 display-3 title">
               {name === null ? "null" : name}

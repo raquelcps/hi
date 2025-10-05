@@ -11,7 +11,7 @@ Variables
   --transition: all 0.3s linear;
   --nav-height: 55px;
   --min-footer-height: 11vh;
-  --card-height: 29rem;
+  --card-height: 22rem;
   --primary-blue: #569cd6;
   --primary-green: #4ec9b0;
   --primary-orange: #ce9178;
@@ -51,6 +51,10 @@ a:hover {
   font-family: "Monaspace Neon SemiBold", monospace;
 }
 
+.text-font-italic {
+  font-family: "Monaspace Krypton SemiBoldItalic", monospace;
+}
+
 .text-blue {
   color: var(--primary-blue);
 }
@@ -72,8 +76,7 @@ a:hover {
     theme.name === "light" ? "var(--bs-dark)" : "var(--bs-light)"};
 
   &:hover {
-    color: ${({ theme }) =>
-      theme.name === "light" ? "var(--bs-light)" : "var(--bs-dark)"};
+    color: var(--bs-primary);
   }
 }
 

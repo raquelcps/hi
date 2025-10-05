@@ -39,8 +39,7 @@ const Projects = () => {
         )}
         {mainProjects.length !== 0 && (
           <>
-            {/* <Row xs={1} md={2} lg={3} className="g-4 justify-content-center"> */}
-            <Row xs={1} md={2} lg={3} className="mt-5 align-items-center">
+            <Row xs={1} md={3} lg={3} className="mt-5 g-4 justify-content-center">
               {mainProjects.map((element) => {
                 return (
                   <Col key={element.id}>
@@ -85,8 +84,8 @@ const Projects = () => {
     <Element name={"Projects"} id="projects">
       <section className="section">
         <Container>
-          <Container className="d-flex justify-content-center text-yellow">
-            <Title size={"h2"} text={"Projects"} color={"yellow"} />
+          <Container className="d-flex justify-content-center text-green">
+            <Title size={"h2"} text={"Projects"} color={"green"} />
           </Container>
           {content}
         </Container>

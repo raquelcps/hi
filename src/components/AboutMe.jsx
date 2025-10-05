@@ -35,13 +35,13 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
             <Title size={"h2"} text={"About Me"} color={"green"} />
           </Container>
           <Row className="align-items-center mt-5">
-            <Col className="d-flex flex-column text-center">
+            <Col className="d-flex flex-column col-md-6 col-12 mb-4 text-center">
               <Container>
                 {bio && <p className="text-font text-green">{bio}</p>}
                 {moreInfo && <p className="text-font text-green">{moreInfo}</p>}
               </Container>
             </Col>
-            <Col className="d-none d-md-block text-center">
+            <Col className="d-md-block col-md-6 col-12 text-center">
               <img
                 src={avatar_url}
                 alt="GitHub Avatar"

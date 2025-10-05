@@ -10,7 +10,8 @@ import HeroLight2 from "./images/hero-light2.jpg";
 import HeroDark from "./images/hero-light2.jpg";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+import userProfileIcon from "./images/carbon--user-profile.png";
+import basketballIcon from "./images/carbon--basketball.png";
 
 /* START HERE
  **************************************************************
@@ -53,7 +54,8 @@ export const skillsList = [
   "Ruby (MVC architecture)",
   "Angular (component-based design)",
   "Design Systems",
-  "RSpec/Capybara/Selenium/Jasmine/Karma",
+  "RSpec/Capybara/Selenium",
+  "Jasmine/Karma",
   "Information Organization & Retrieval",
   "Type & Graphic Design"
 ]
@@ -127,11 +129,11 @@ export const skillData = [
     skill: <Icon icon="bi:git" className="display-4" />,
     name: "Git",
   },
-  {
-    id: 13,
-    skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
-    name: "GitHub",
-  },
+  // {
+  //   id: 13,
+  //   skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
+  //   name: "GitHub",
+  // },
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
@@ -141,13 +143,17 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["hi", "nba-hoop-helix-playoffs-app", "example-3"];
+export const filteredProjects = ["hi", "nba-hoop-helix-playoffs-app"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "hi",
+    image: userProfileIcon,
+  },
+  {
+    name: "nba-hoop-helix-playoffs-app",
+    image: basketballIcon,
   },
 ];
 
