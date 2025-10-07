@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hi/static/css/main.af8933d5.css",
-    "main.js": "/hi/static/js/main.553058a7.js",
+    "main.js": "/hi/static/js/main.83a7dfea.js",
     "static/media/hero-light2.jpg": "/hi/static/media/hero-light2.fcd20ebe0ccb11451051.jpg",
     "static/media/MonaspaceNeon-SemiBold.woff": "/hi/static/media/MonaspaceNeon-SemiBold.5193fc9df1c14e934c0b.woff",
     "static/media/MonaspaceNeon-Regular.woff": "/hi/static/media/MonaspaceNeon-Regular.e5511f1c8f38fe5683f1.woff",
@@ -23,10 +23,10 @@
     "index.html": "/hi/index.html",
     "static/media/raquelcpsCodeLogo.svg": "/hi/static/media/raquelcpsCodeLogo.72ad15a3c282a2af2186e0fe6b6d6dd2.svg",
     "main.af8933d5.css.map": "/hi/static/css/main.af8933d5.css.map",
-    "main.553058a7.js.map": "/hi/static/js/main.553058a7.js.map"
+    "main.83a7dfea.js.map": "/hi/static/js/main.83a7dfea.js.map"
   },
   "entrypoints": [
     "static/css/main.af8933d5.css",
-    "static/js/main.553058a7.js"
+    "static/js/main.83a7dfea.js"
   ]
 }
