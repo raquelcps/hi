@@ -1,4 +1,6 @@
 import React from "react";
+// Styles
+import styled from "styled-components";
 // State
 import { useSelector } from "react-redux";
 import { selectMode } from "../app/appSlice";
@@ -9,18 +11,29 @@ import Title from "./Title";
 // Config
 import { experienceList, skillsList, skillData, resume } from "../config";
 
+// #region styled-components
+const StyledSkills = styled.section`
+  .title {
+    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-orange)"};
+  }
+  .text-font {
+    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-orange)"};
+  }
+`;
+// #endregion
+
 // #region component
 const Skills = () => {
   const theme = useSelector(selectMode);
 
   return (
     <Element name={"Skills"} id="skills">
-      <section className="section">
+      <StyledSkills className="section">
         <Container>
-          <Container className="d-flex justify-content-center text-orange">
+          <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Skills"} color={"orange"} />
           </Container>
-          <Row className="align-items-start mt-5 text-font text-orange">
+          <Row className="align-items-start mt-5 text-font">
             <Col xs={12} md={6} className="d-flex flex-column">
               <ul>
                 {experienceList.map((experience, index) => (
@@ -40,7 +53,7 @@ const Skills = () => {
               </ul>
             </Col>
           </Row>
-          <Row className="mt-3 align-items-center text-orange">
+          <Row className="mt-3 align-items-center text-font">
             {skillData.map((skills) => (
               <Col xs={2} lg={1} key={skills.id} className="my-md-4 text-center">
                 <p>{skills.skill}</p>
@@ -60,7 +73,7 @@ const Skills = () => {
             </a>
           )}
         </Container>
-      </section>
+      </StyledSkills>
     </Element>
   );
 };

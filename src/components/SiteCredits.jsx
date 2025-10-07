@@ -12,6 +12,12 @@ const StyledSection = styled.section`
   p a {
     text-decoration: none;
   }
+  .title {
+    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-yellow)"};
+  }
+  .text-font, .text-font-italic {
+    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-yellow)"};
+  }
 `;
 // #endregion
 
@@ -19,10 +25,10 @@ const SiteCredits = () => (
   <Element name={"SiteCredits"} id="site-credits">
     <StyledSection className="section">
       <Container>
-        <Container className="d-flex justify-content-center text-font-italic text-yellow">
+        <Container className="d-flex justify-content-center text-font-italic">
           <Title size={"h2"} text={"Site Credits"} color={"yellow"}  />
         </Container>
-        <Row className="mt-5 text-font text-center text-yellow">
+        <Row className="mt-5 text-font text-center">
           <Col className="col-md-6 col-12 mb-4">
             <p>Fonts:</p>
             <p>

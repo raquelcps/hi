@@ -1,4 +1,6 @@
 import React from "react";
+// Styles
+import styled from "styled-components";
 // State
 import { useSelector } from "react-redux";
 import { selectMode } from "../app/appSlice";
@@ -62,11 +64,19 @@ const Projects = () => {
     );
   }
 
+  // #region styled-components
+  const StyledSkills = styled.section`
+    .title {
+      color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+    }
+  `;
+  // #endregion
+
   return (
     <Element name={"Projects"} id="projects">
       <section className="section">
         <Container>
-          <Container className="d-flex justify-content-center text-green">
+          <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Projects"} color={"green"} />
           </Container>
           {content}

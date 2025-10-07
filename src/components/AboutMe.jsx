@@ -17,6 +17,12 @@ const StyledAboutMe = styled.section`
     width: 18rem;
     height: 18rem;
   }
+  .title {
+    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+  }
+  .text-font {
+    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+  }
 `;
 // #endregion
 
@@ -31,14 +37,14 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
     <Element name={"About"} id="about">
       <StyledAboutMe className="section">
         <Container>
-          <Container className="d-flex justify-content-center text-green">
+          <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"About Me"} color={"green"} />
           </Container>
           <Row className="align-items-center mt-5">
             <Col className="d-flex flex-column col-md-6 col-12 mb-4 text-center">
               <Container>
-                {bio && <p className="text-font text-green">{bio}</p>}
-                {moreInfo && <p className="text-font text-green">{moreInfo}</p>}
+                {bio && <p className="text-font">{bio}</p>}
+                {moreInfo && <p className="text-font">{moreInfo}</p>}
               </Container>
             </Col>
             <Col className="d-md-block col-md-6 col-12 text-center">
