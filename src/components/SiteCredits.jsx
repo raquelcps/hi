@@ -7,7 +7,7 @@ import Title from "./Title";
 import { Col, Container, Row } from "react-bootstrap";
 
 // #region styled-components
-const StyledSection = styled.section`
+const StyledSiteCredits = styled.section`
   min-height: calc(100vh - var(--nav-height) - 3rem) !important;
   p a {
     text-decoration: none;
@@ -23,7 +23,7 @@ const StyledSection = styled.section`
 
 const SiteCredits = () => (
   <Element name={"SiteCredits"} id="site-credits">
-    <StyledSection className="section">
+    <StyledSiteCredits className="section">
       <Container>
         <Container className="d-flex justify-content-center text-font-italic">
           <Title size={"h2"} text={"Site Credits"} color={"yellow"}  />
@@ -49,7 +49,7 @@ const SiteCredits = () => (
           </Col>
         </Row>
       </Container>
-    </StyledSection>
+    </StyledSiteCredits>
   </Element>
 );
 

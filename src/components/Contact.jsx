@@ -8,7 +8,7 @@ import Title from "./Title";
 import { Container, Row } from "react-bootstrap";
 
 // #region styled-components
-const StyledSection = styled.section`
+const StyledContact = styled.section`
   min-height: calc(100vh - var(--nav-height) - 2rem) !important;
   h5 a {
     text-decoration: none;
@@ -31,7 +31,7 @@ const propTypes = {
 const Contact = ({ email, instagramLink }) => {
   return (
     <Element name={"Contact"} id="contact">
-      <StyledSection className="section">
+      <StyledContact className="section">
         <Container>
           <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Contact"} color={"blue"} />
@@ -61,7 +61,7 @@ const Contact = ({ email, instagramLink }) => {
             </Row>
           </Container>
         </Container>
-      </StyledSection>
+      </StyledContact>
     </Element>
   );
 };

@@ -65,7 +65,7 @@ const Projects = () => {
   }
 
   // #region styled-components
-  const StyledSkills = styled.section`
+  const StyledSProjects = styled.section`
     .title {
       color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
     }
@@ -74,14 +74,14 @@ const Projects = () => {
 
   return (
     <Element name={"Projects"} id="projects">
-      <section className="section">
+      <StyledSProjects className="section">
         <Container>
           <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Projects"} color={"green"} />
           </Container>
           {content}
         </Container>
-      </section>
+      </StyledSProjects>
     </Element>
   );
 };
