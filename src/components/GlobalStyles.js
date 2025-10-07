@@ -14,7 +14,7 @@ Variables
   --card-height: 22rem;
   --primary-blue: #569cd6;
   --primary-green: #4ec9b0;
-  --primary-orange: #f4e05a;
+  --primary-orange: #f08f69;
   --primary-yellow: #f1e170;
 }
 

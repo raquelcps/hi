@@ -40,14 +40,14 @@ const Skills = () => {
               </ul>
             </Col>
           </Row>
-          {/* Keep this icons for now. Maybe make them smaller and just run accross the bottom */}
           <Row className="mt-3 align-items-center text-orange">
             {skillData.map((skills) => (
-              <Col xs={2} key={skills.id} className="my-md-3 text-center">
+              <Col xs={2} lg={1} key={skills.id} className="my-md-4 text-center">
                 <p>{skills.skill}</p>
               </Col>
             ))}
           </Row>
+          {/* Keep optional resume button. I will host it later. */}
           {resume && (
             <a href={resume}>
               <Button

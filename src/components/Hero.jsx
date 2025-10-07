@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import Logo from "../images/logo.svg";
 import FloppyLogo from "../images/floppyLogo.png";
 import { Light, Dark } from "../config";
 // Components

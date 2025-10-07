@@ -4,20 +4,15 @@ import { useSelector } from "react-redux";
 import { selectMode } from "../app/appSlice";
 import { selectProjects, selectMainProjects } from "../app/projectsSlice";
 import { useGetProjectsQuery } from "../app/apiSlice";
-// Router
-import { Link } from "react-router-dom";
-// Icons
-import { Icon } from "@iconify/react";
 // Components
 import { Element } from "react-scroll";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Loading from "./Loading";
 import Title from "./Title";
 import ProjectCard from "./ProjectCard";
 
 // #region component
 const Projects = () => {
-  const theme = useSelector(selectMode);
   const projects = useSelector(selectProjects);
   const mainProjects = useSelector(selectMainProjects);
   const { isLoading, isSuccess, isError, error } = useGetProjectsQuery();
@@ -54,20 +49,7 @@ const Projects = () => {
                 );
               })}
             </Row>
-            {/* {projects.length > 3 && (
-              <Container className="text-center mt-5">
-                <Link to="/All-Projects">
-                  <Button
-                    size="lg"
-                    variant={
-                      theme === "light" ? "outline-dark" : "outline-light"
-                    }
-                  >
-                    All <Icon icon="icomoon-free:github" /> Projects
-                  </Button>
-                </Link>
-              </Container>
-            )} */}
+           {/* I removed the "All Projects" button, link and related Button, Link< Icon imports */}
           </>
         )}
       </>
