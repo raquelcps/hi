@@ -7,6 +7,7 @@ import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import SiteCredits from "../components/SiteCredits";
 import BackToTop from "../components/BackToTop";
 // Config
 import { filteredProjects, bio, moreInfo, email, instagramLink } from "../config";
@@ -36,6 +37,7 @@ const Home = () => {
           email={email}
           instagramLink={instagramLink}
         />
+        <SiteCredits />
       </main>
       <BackToTop />
     </>
