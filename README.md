@@ -14,8 +14,14 @@ I felt ~~a bit~~ incredibly rusty and intimidated. Sometimes feeling like I forg
 Besides wanting to start a project and get my coding confidence back up, I was also curious about React because I hadn't worked with it much. I thought it would be good practice to work my way through the documentatation and component architecture.
 
 ## Customizations
-Added fonts
-Added a new SiteCredits section component
+- New fonts
+- New SiteCredits section component
+- Various styling adjustments
+
+## TODOs
+With more time, I'd like to:
+- make the site tab navigable
+- add tests (at least integration tests)
 
 
 
