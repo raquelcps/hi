@@ -83,7 +83,7 @@ const ProjectCard = ({ demo, description, image, name, url }) => {
         <Card.Body className="overflow-auto text-center">
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          {demo !== (undefined && null && "") ? (
+          {(demo !== undefined && demo !== null && demo !== "") ? (
             <Card.Link
               className="text-green"
               href={demo}>
