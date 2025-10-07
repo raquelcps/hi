@@ -55,19 +55,6 @@ a:hover {
   font-family: "Monaspace Krypton SemiBoldItalic", monospace;
 }
 
-.text-blue {
-  color: var(--primary-blue);
-}
-.text-green {
-  color: var(--primary-green);
-}
-.text-orange {
-  color: var(--primary-orange);
-}
-.text-yellow {
-  color: var(--primary-yellow);
-}
-
 .link-icons {
   line-height: 0;
   font-size: 2.25rem;
