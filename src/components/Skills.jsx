@@ -60,6 +60,13 @@ const Skills = () => {
               </Col>
             ))}
           </Row>
+          <Row className="mt-3 justify-content-center text-font">
+            <Col xs={8}>
+              <h5>
+                Working on: React with Redux, Python (via type design), WCAG accessibility standards, TypeScript
+              </h5>
+            </Col>
+          </Row>
           {/* Keep optional resume button. I will host it later. */}
           {resume && (
             <a href={resume}>

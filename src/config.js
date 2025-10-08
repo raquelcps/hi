@@ -61,7 +61,7 @@ export const skillsList = [
 ]
 
 export const experienceList = [
-  "Fullstack Developer (6+ yrs)",
+  "Fullstack Developer (6+ yrs) in Agile environment",
   "Front-end 🧡",
   "User-centered approach",
   "Librarian (6+ yrs)",
@@ -143,7 +143,7 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["hi", "nba-hoop-helix-playoffs-app"];
+export const filteredProjects = ["hi", "nba-hoop-helix-playoffs-app-dup"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
@@ -152,7 +152,7 @@ export const projectCardImages = [
     image: userProfileIcon,
   },
   {
-    name: "nba-hoop-helix-playoffs-app",
+    name: "nba-hoop-helix-playoffs-app-dup",
     image: basketballIcon,
   },
 ];

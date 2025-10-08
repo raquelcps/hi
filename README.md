@@ -19,7 +19,8 @@ Besides wanting to start a project and get my coding confidence back up, I was a
 - Various styling adjustments
 
 ## TODOs
-With more time, I'd like to:
+I plan to:
+- submit an issue for a bug I found in ProjectCard component
 - make the site tab navigable
 - add tests (at least integration tests)
 
