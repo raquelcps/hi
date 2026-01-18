@@ -17,7 +17,9 @@ import ThemeToggle from "./ThemeToggle";
 const navLinks = {
   routes: [
     { id: "1R", name: "Home", route: "/" },
-    { id: "2R", name: "All Projects", route: "/All-Projects" },
+    // Temporarily removed All Projects link
+    // { id: "2R", name: "All Projects", route: "/All-Projects" },
+    { id: "3R", name: "Case Study", route: "/Case-Study" },
   ],
   to: [
     { id: "1T", name: "Home", to: "Home" },
