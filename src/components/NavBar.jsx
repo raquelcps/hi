@@ -118,7 +118,7 @@ const NavBar = ({ Logo = defaultLogo, callBack, closeDelay = 125 }) => {
                         <Link
                           to={el.route}
                           className={
-                            pathname === el.route
+                            pathname.toLowerCase() === el.route.toLowerCase()
                               ? "nav-link active"
                               : "nav-link"
                           }

@@ -47,12 +47,11 @@ export default function JournalEditorUX() {
         <section style={styles.section}>
           <h2>Overview</h2>
           <p>
-            This case study describes a UX redesign I initiated and executed while working as a software engineer at Scholastica, for the Journal
-            Website Editor (JWE) tool used by journal teams to customize their website's look and manage content without writing code.
+            This case study describes a UX redesign I initiated and executed while working as a software engineer at Scholastica. The project focused on the Journal Website Editor (JWE) tool used by journal teams to customize their website's look and manage content without writing code.
           </p>
           
           <p>
-            Repeated user confusion and support requests around images and previews revealed broader usability breakdowns in how the JWE communicated constraints, feedback, and system behavior. While improving the image workflow was the catalyst, the project evolved into a wider UX redesign aimed at making the JWE experience clearer, more predictable, and better aligned with real user expectations.
+            Repeated user confusion and support requests around images and previews revealed broader usability breakdowns in how the JWE communicated constraints, feedback, and system behavior. While improving the image workflow was the catalyst, the project evolved into a wider UX redesign aimed at making the editor experience clearer, more predictable, and better aligned with real user expectations.
           </p>
 
           <p>
@@ -64,8 +63,7 @@ export default function JournalEditorUX() {
         <section style={styles.section}>
           <h2>The Problem</h2>
           <p>
-            Journal editors were regularly contacting customer support about difficulties with
-            the image upload workflow. Several related usability issues emerged:
+            Journal editors were regularly contacting customer support about difficulties with the image upload workflow. Several related usability issues emerged:
           </p>
 
           <ul>
