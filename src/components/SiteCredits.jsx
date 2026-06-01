@@ -34,6 +34,10 @@ const SiteCredits = () => (
             <p>
               Monaspace Krypton and Monaspace Neon by <a href="https://github.com/githubnext/monaspace" target="_blank" rel="noopener noreferrer">GitHub</a>.
             </p>
+            <p>Template:</p>
+            <p>
+              React Portfolio Template by <a href="https://github.com/mshuber1981/github-react-portfolio-template/tree/main?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">Michael Huber</a>.
+            </p>
           </Col>
           <Col className="col-md-6 col-12"> 
             <p>Photos:</p>

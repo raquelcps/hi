@@ -72,6 +72,10 @@ a:hover {
   border-color: var(--bs-primary);
 }
 
+.navbar-expand-xl .navbar-nav .nav-link {
+  padding: 0rem 1rem;
+}
+
 @media screen and (min-width: 800px) {
   .link-icons {
     font-size: 2.5rem;

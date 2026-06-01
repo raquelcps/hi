@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import { Element } from "react-scroll";
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "./Title";
+import { experienceList } from "../config";
 
 // #region styled-components
 const StyledAboutMe = styled.section`
@@ -23,6 +24,25 @@ const StyledAboutMe = styled.section`
   .text-font {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
   }
+  .experience-list ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .experience-list li {
+    padding-left: 1.5rem;
+    border-left: 2px solid ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+  }
+  .experience-list li:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+  .experience-list li h5 {
+    font-size: 1rem;
+  }
 `;
 // #endregion
 
@@ -31,6 +51,7 @@ const propTypes = {
   avatar_url: PropTypes.string.isRequired,
   bio: PropTypes.string,
   moreInfo: PropTypes.string,
+  experienceList: PropTypes.arrayOf(PropTypes.string),
 };
 const AboutMe = ({ avatar_url, bio, moreInfo }) => {
   return (
@@ -55,6 +76,17 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
                 className="mx-auto rounded-circle border border-primary-subtle"
                 style={{ width: "15rem", height: "15rem" }}
               />
+            </Col>
+          </Row>
+          <Row className="align-items-start mt-5 text-font">
+            <Col xs={12} md={12} className="d-flex flex-column experience-list">
+              <ul>
+                {experienceList.map((experience, index) => (
+                  <li key={index}>
+                    {experience}
+                  </li>
+                ))}
+              </ul>
             </Col>
           </Row>
         </Container>

@@ -41,8 +41,15 @@ export { HeroDark as Dark };
 export const bio =
   "Fullstack Web Developer and Designer";
 export const moreInfo =
-  "I am an experienced developer with a background in librarianship and design. Both areas have shaped my user-centered approach and love for the front-end.";
-  //  I made this site with a React-based GH Pages template so I could learn more about React and Redux.";
+  "I am an experienced developer with a background in librarianship and design. Both areas have shaped my user-centered approach and love for front-end development.";
+
+export const experienceList = [
+  "Fullstack Developer (6+ yrs)",
+  "Front End 🧡",
+  "User-centered",
+  "Librarian (6+ yrs)",
+  "Designer (10+ yrs)"
+]
 
 /* Skills
  ************************************************************** 
@@ -60,73 +67,65 @@ export const skillsList = [
   "Type & Graphic Design"
 ]
 
-export const experienceList = [
-  "Fullstack Developer (6+ yrs) in Agile environment",
-  "Front-end 🧡",
-  "User-centered approach",
-  "Librarian (6+ yrs)",
-  "Designer (10+ yrs)"
-]
-
 export const skillData = [
   {
     id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
+    skill: <Icon icon="mdi:language-html5" className="display-5" />,
     name: "HTML5",
   },
   {
     id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
+    skill: <Icon icon="ion:logo-css3" className="display-5" />,
     name: "CSS3",
   },
   {
     id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
+    skill: <Icon icon="fa6-brands:js" className="display-5" />,
     name: "JavaScript",
   },
   {
     id: 4,
-    skill: <Icon icon="ant-design:ruby-outlined" className="display-4" />,
+    skill: <Icon icon="ant-design:ruby-outlined" className="display-5" />,
     name: "Ruby",
   },
   {
     id: 5,
-    skill: <Icon icon="simple-icons:angular" className="display-4" />,
+    skill: <Icon icon="simple-icons:angular" className="display-5" />,
     name: "Angular",
   },
   {
     id: 6,
-    skill: <Icon icon="file-icons:rspec" className="display-4" />,
+    skill: <Icon icon="file-icons:rspec" className="display-5" />,
     name: "Rspec",
   },
   {
     id: 7,
-    skill: <Icon icon="file-icons:cucumber" className="display-4" />,
+    skill: <Icon icon="file-icons:cucumber" className="display-5" />,
     name: "Cucumber",
   },
   {
     id: 8,
-    skill: <Icon icon="file-icons:jasmine" className="display-4" />,
+    skill: <Icon icon="file-icons:jasmine" className="display-5" />,
     name: "Jasmine",
   },
   {
     id: 9,
-    skill: <Icon icon="cib:storybook" className="display-4" />,
+    skill: <Icon icon="cib:storybook" className="display-5" />,
     name: "Storybook",
   },
   {
     id: 10,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
+    skill: <Icon icon="ri:bootstrap-fill" className="display-5" />,
     name: "BootStrap",
   },
   {
     id: 11,
-    skill: <Icon icon="mdi:react" className="display-4" />,
+    skill: <Icon icon="mdi:react" className="display-5" />,
     name: "React",
   },
   {
     id: 12,
-    skill: <Icon icon="bi:git" className="display-4" />,
+    skill: <Icon icon="bi:git" className="display-5" />,
     name: "Git",
   },
   // {
@@ -156,6 +155,13 @@ export const projectCardImages = [
     image: basketballIcon,
   },
 ];
+
+export const projectsIntro =
+  "View the code for a couple of recent projects.";
+export const caseStudyIntro =
+  "I don't just write code, I pay attention to user needs!";
+export const caseStudyMore =
+  "Read my case study for a real-world interface redesign project that I lead from problem discovery through implementation and release.";
 
 /* Contact Info
  ************************************************************** 

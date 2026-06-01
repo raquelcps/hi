@@ -33,16 +33,7 @@ const Skills = () => {
           <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Skills"} color={"orange"} />
           </Container>
-          <Row className="align-items-start mt-5 text-font">
-            <Col xs={12} md={6} className="d-flex flex-column">
-              <ul>
-                {experienceList.map((experience, index) => (
-                  <li key={index}>
-                    <h5>{experience}</h5>
-                  </li>
-                ))}
-              </ul>
-            </Col>
+           <Row className="d-flex justify-content-center mt-5 text-font">
             <Col xs={12} md={6} className="d-flex flex-column">
               <ul>
                 {skillsList.map((skill, index) => (

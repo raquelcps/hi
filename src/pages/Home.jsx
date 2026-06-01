@@ -10,7 +10,7 @@ import Contact from "../components/Contact";
 import SiteCredits from "../components/SiteCredits";
 import BackToTop from "../components/BackToTop";
 // Config
-import { filteredProjects, bio, moreInfo, email, instagramLink } from "../config";
+import { filteredProjects, bio, moreInfo, email, instagramLink, projectsIntro, caseStudyIntro, caseStudyMore } from "../config";
 // Utils
 import { updateTitle } from "../utils";
 
@@ -32,7 +32,12 @@ const Home = () => {
           moreInfo={moreInfo}
         />
         <Skills />
-        <Projects filteredProjects={filteredProjects} />
+        <Projects
+          filteredProjects={filteredProjects}
+          projectsIntro={projectsIntro}
+          caseStudyIntro={caseStudyIntro}
+          caseStudyMore={caseStudyMore}
+        />
         <Contact
           email={email}
           instagramLink={instagramLink}

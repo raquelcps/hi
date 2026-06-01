@@ -2,6 +2,8 @@ import React from "react";
 // Styles
 import styled from "styled-components";
 import PropTypes from "prop-types";
+// Icons
+import { Icon } from "@iconify/react";
 // Components
 import { Element } from "react-scroll";
 import Title from "./Title";
@@ -45,18 +47,15 @@ const Contact = ({ email, instagramLink }) => {
                 {email}
               </h5>
             </Row>
-            <Row className="mt-3 text-center">
-              <h5 className="mb-2 text-font">Instagram:</h5>
+            <Row className="mt-5 text-center">
+              <h2 className="mb-2 text-font"><Icon icon="fa-brands:instagram-square" /></h2>
               <h5 className="text-font-italic mb-2">
                 <a
                   href={instagramLink}
                   aria-label="Check out my Instagram profile."
                 >
-                  chicagopublicskills
+                  @chicagopublicskills
                 </a>
-              </h5>
-              <h5 className="text-font-italic mb-3">
-                (art & design with a side of tech)
               </h5>
             </Row>
           </Container>

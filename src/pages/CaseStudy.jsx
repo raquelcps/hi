@@ -17,14 +17,22 @@ export default function JournalEditorUX() {
   const { data: userData } = useGetUsersQuery();
   
   React.useEffect(() => {
-    updateTitle(`${userData.name} | Case Study`);
+    updateTitle(`${userData.name} | Journal Editor Redesign Case Study`);
   }, [userData]);
   
   return (
     <main style={styles.page}>
-      <div style={styles.container}>
+      {/* Scoped style override for .underline */}
+      <style>
+        {`
+          .case-study-page .underline {
+            width: 99%
+          }
+        `}
+      </style>
+      <div className="case-study-page" style={styles.container}>
         <Container className="d-flex justify-content-center">
-          <Title size={"h2"} text={"Case Study"} color={"green"}  />
+          <Title size={"h2"} text={"Journal Editor Redesign Case Study"} color={"green"}  />
         </Container>
 
         {/* ---------- HERO ---------- */}
@@ -37,7 +45,7 @@ export default function JournalEditorUX() {
           </p>
 
           <p style={styles.meta}>
-            Role: Software Engineer (UX-focused)
+            Role: Software Engineer
           <br />
             Team: Head Designer, Tech Lead, Senior Engineers, QA
           </p>
