@@ -43,6 +43,19 @@ const StyledAboutMe = styled.section`
   .experience-list li h5 {
     font-size: 1rem;
   }
+
+  @media (max-width: 767.98px) {
+    .experience-list ul {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .experience-list li,
+    .experience-list li:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+  }
 `;
 // #endregion
 
@@ -78,8 +91,8 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
               />
             </Col>
           </Row>
-          <Row className="align-items-start mt-5 text-font">
-            <Col xs={12} md={12} className="d-flex flex-column experience-list">
+          <Row className="d-flex justify-content-center mt-5 text-font">
+            <Col xs={12} md={5} className="d-flex flex-column experience-list text-center">
               <ul>
                 {experienceList.map((experience, index) => (
                   <li key={index}>
