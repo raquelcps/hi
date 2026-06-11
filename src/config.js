@@ -1,4 +1,4 @@
-// Skills icons - https://icon-sets.iconify.design/
+// Skills icons -
 import { Icon } from "@iconify/react";
 
 // Navbar Logo image (add your image to the src/images directory and uncomment the line below to import your image)
@@ -46,7 +46,6 @@ export const moreInfo =
 export const experienceList = [
   "Fullstack Developer (6+ yrs)",
   "Front End 🧡",
-  "User-centered",
   "Librarian (6+ yrs)",
   "Designer (10+ yrs)"
 ]
@@ -161,7 +160,7 @@ export const projectsIntro =
 export const caseStudyIntro =
   "I don't just write code, I pay attention to user needs!";
 export const caseStudyMore =
-  "Read my case study for a real-world interface redesign project that I lead from problem discovery through implementation and release.";
+  "I wrote a case study for a real-life redesign project that I led from problem discovery through implementation and release. Find out more about the Journal Editor Redesign project.";
 
 /* Contact Info
  ************************************************************** 

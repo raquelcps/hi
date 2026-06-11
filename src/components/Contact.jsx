@@ -12,14 +12,29 @@ import { Container, Row } from "react-bootstrap";
 // #region styled-components
 const StyledContact = styled.section`
   min-height: calc(100vh - var(--nav-height) - 2rem) !important;
+
+  --contact-font-color: ${({ theme }) =>
+    theme.name === "light" ? "var(--bs-dark)" : "var(--primary-blue)"};
+  --contact-font-hover-color: ${({ theme }) =>
+    theme.name === "light" ? "var(--bs-secondary)" : "var(--bs-info)"};
+
   h5 a {
+    color: inherit;
     text-decoration: none;
+    transition: color var(--transition);
   }
+
+  h5 a:hover,
+  h5 a:focus-visible {
+    color: var(--contact-font-hover-color);
+  }
+
   .title {
-    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-blue)"};
+    color: var(--contact-font-color);
   }
+
   .text-font, .text-font-italic {
-    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-blue)"};
+    color: var(--contact-font-color);
   }
 `;
 // #endregion
@@ -48,7 +63,7 @@ const Contact = ({ email, instagramLink }) => {
               </h5>
             </Row>
             <Row className="mt-5 text-center">
-              <h2 className="mb-2 text-font"><Icon icon="fa-brands:instagram-square" /></h2>
+              <h2 className="mb-2 text-font"><Icon icon="bi:instagram" /></h2>
               <h5 className="text-font-italic mb-2">
                 <a
                   href={instagramLink}

@@ -33,28 +33,22 @@ const Skills = () => {
           <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Skills"} color={"orange"} />
           </Container>
-           <Row className="d-flex justify-content-center mt-5 text-font">
-            <Col xs={12} md={6} className="d-flex flex-column">
-              <ul>
-                {skillsList.map((skill, index) => (
-                  <li key={index}>
-                    <h5>{skill}</h5>
-                  </li>
-                ))}
-              </ul>
-            </Col>
+          <Row className="mt-3 align-items-center justify-content-center text-font">
+            {skillData.map((skills) => {
+              return (
+                <Col xs={4} key={skills.id} className="my-md-5 text-center">
+                  <figure>
+                    {skills.skill}
+                    <figcaption>{skills.name}</figcaption>
+                  </figure>
+                </Col>
+              );
+            })}
           </Row>
-          <Row className="mt-3 align-items-center text-font">
-            {skillData.map((skills) => (
-              <Col xs={2} lg={1} key={skills.id} className="my-md-4 text-center">
-                <p>{skills.skill}</p>
-              </Col>
-            ))}
-          </Row>
-          <Row className="mt-3 justify-content-center text-font">
-            <Col xs={8}>
+          <Row className="mt-3 justify-content-center text-font text-center">
+            <Col xs={10}>
               <h5>
-                Working on: React with Redux, Python (via type design), WCAG accessibility standards, TypeScript
+                Working on: WCAG accessibility standards, Python (via type design), React with Redux
               </h5>
             </Col>
           </Row>

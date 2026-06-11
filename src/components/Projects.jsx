@@ -104,7 +104,7 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
           {content}
           <Container>
             <Row className="case-study-link justify-content-center mt-5 text-font">
-              <Col xs={8} className="mt-5">
+              <Col xs={12} md={8} className="mt-5">
                 <p className="text-center h5">{caseStudyIntro}</p>
                 <p className="text-center subtitle">{caseStudyMore}</p>
               </Col>
@@ -118,7 +118,7 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
                       theme === "light" ? "outline-dark" : "outline-light"
                     }
                   >
-                    Journal Editor Redesign Case Study
+                    Read the Case Study
                   </Button>
                 </Link>
               </Col>
