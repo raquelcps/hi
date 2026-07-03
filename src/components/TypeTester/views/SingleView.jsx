@@ -26,6 +26,7 @@ const SingleView = ({ state }) => {
   return (
     <StyledSingleView>
       <SpecimenText
+        data-testid="specimen-text"
         fontSize={state.fontSize}
         lineHeight={state.lineHeight}
         tracking={state.tracking}
