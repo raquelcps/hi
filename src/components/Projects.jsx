@@ -15,6 +15,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import Loading from "./Loading";
 import Title from "./Title";
 import ProjectCard from "./ProjectCard";
+import TypeTester from "./TypeTester/TypeTester";
 
 // #region component
 const propTypes = {
@@ -103,24 +104,9 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
           </Row>
           {content}
           <Container>
-            <Row className="case-study-link justify-content-center mt-5 text-font">
+            <Row className="project-container justify-content-center mt-5 text-font">
               <Col xs={12} md={8} className="mt-5">
-                <p className="text-center h5">{caseStudyIntro}</p>
-                <p className="text-center subtitle">{caseStudyMore}</p>
-              </Col>
-            </Row>
-            <Row className="align-items-center mt-4 text-font">
-              <Col xs={12} md={12} className="d-flex justify-content-center">
-                <Link to="/Redesign-Case-Study">
-                  <Button
-                    size="lg"
-                    variant={
-                      theme === "light" ? "outline-dark" : "outline-light"
-                    }
-                  >
-                    Read the Case Study
-                  </Button>
-                </Link>
+                <TypeTester />
               </Col>
             </Row>
           </Container>
