@@ -105,7 +105,7 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
           {content}
           <Container>
             <Row className="project-container justify-content-center mt-5 text-font">
-              <Col xs={12} md={8} className="mt-5">
+              <Col xs={12} md={12} className="mt-5">
                 <TypeTester />
               </Col>
             </Row>

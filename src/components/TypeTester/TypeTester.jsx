@@ -37,8 +37,8 @@ const TypeTester = () => {
         <Container className="d-flex justify-content-center text-font-italic">
           <Title size={"h2"} text={"Type Tester"} color={"yellow"}  />
         </Container>
-        <Row className="mt-5 text-font text-center">
-          <Col className="col-md-6 col-12 mb-4">
+        <Row className="mt-5 text-font">
+          <Col className="col-12 mb-4">
             
             <Toolbar
               state={state}

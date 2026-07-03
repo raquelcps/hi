@@ -151,4 +151,126 @@ describe("TypeTester", () => {
       lineHeight: "2",
     });
   });
+
+  test("renders SingleView", () => {
+    render(<TypeTester />);
+
+    const viewSelect = screen.getByLabelText("View");
+
+    expect(viewSelect).toHaveValue("single");
+
+    expect(
+      screen.getByTestId("single-view")
+    ).toBeInTheDocument();
+  });
+
+  test("renders ParagraphView", async () => {
+    const user = userEvent.setup();
+
+    render(<TypeTester />);
+
+    const viewSelect = screen.getByLabelText("View");
+
+    await user.selectOptions(viewSelect, "paragraph");
+
+    expect(viewSelect).toHaveValue("paragraph");
+
+    expect(
+      screen.getByTestId("paragraph-view")
+    ).toBeInTheDocument();
+  });
+
+  test("renders WaterfallView", async () => {
+    const user = userEvent.setup();
+
+    render(<TypeTester />);
+
+    const viewSelect = screen.getByLabelText("View");
+
+    await user.selectOptions(viewSelect, "waterfall");
+
+    expect(viewSelect).toHaveValue("waterfall");
+
+    expect(
+      screen.getByTestId("waterfall-view")
+    ).toBeInTheDocument();
+  });
+
+  test("renders GridView", async () => {
+    const user = userEvent.setup();
+
+    render(<TypeTester />);
+
+    const viewSelect = screen.getByLabelText("View");
+
+    await user.selectOptions(viewSelect, "grid");
+
+    expect(viewSelect).toHaveValue("grid");
+
+    expect(
+      screen.getByTestId("grid-view")
+    ).toBeInTheDocument();
+
+    const specimens = screen.getAllByTestId("grid-specimen");
+
+    expect(specimens).toHaveLength(3);
+  });
+
+  test("WaterfallView updates when typography controls change", async () => {
+    const user = userEvent.setup();
+
+    render(<TypeTester />);
+
+    // switch to Waterfall view
+    const viewSelect = screen.getByLabelText("View");
+    await user.selectOptions(viewSelect, "waterfall");
+
+    const waterfallView = screen.getByTestId("waterfall-view");
+    expect(waterfallView).toBeInTheDocument();
+
+    // get all waterfall text instances
+    const specimensBefore = screen.getAllByTestId("waterfall-text");
+
+    expect(specimensBefore.length).toBeGreaterThan(1);
+
+    // --- change font size ---
+    const fontSizeSlider = screen.getByLabelText(/^Font Size/);
+
+    fireEvent.change(fontSizeSlider, {
+      target: {
+        value: 80,
+      },
+    });
+
+    // instances should update with scaled font sizes
+    const specimensAfterSize = screen.getAllByTestId("waterfall-text");
+    const expectedSizes = [
+      "80px",
+      "100px",
+      "128px",
+      "160px",
+      "208px",
+    ];
+
+    specimensAfterSize.forEach((el, index) => {
+      expect(el).toHaveStyle({
+        fontSize: expectedSizes[index],
+      });
+    });
+
+    // --- change tracking ---
+    const trackingSlider = screen.getByLabelText(/^Tracking/);
+
+    fireEvent.change(trackingSlider, {
+      target: {
+        value: 25,
+      },
+    });
+
+    const specimensAfterTracking = screen.getAllByTestId("waterfall-text");
+
+    specimensAfterTracking.forEach((el) => {
+      expect(el).toHaveStyle({ letterSpacing: "25px" });
+    });
+  });
 });

@@ -8,7 +8,7 @@ export const DEFAULT_FONT = "font-one";
 
 export const DEFAULT_STYLE = "regular";
 
-export const DEFAULT_FONT_SIZE = 48;
+export const DEFAULT_FONT_SIZE = 30;
 
 export const DEFAULT_LINE_HEIGHT = 1.3;
 
@@ -29,3 +29,5 @@ export const AVAILABLE_VIEWS = [
   "waterfall",
   "grid",
 ];
+
+export const WATERFALL_SCALE_STEPS = [1, 1.25, 1.6, 2, 2.6];
