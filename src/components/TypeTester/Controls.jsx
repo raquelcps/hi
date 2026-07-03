@@ -15,13 +15,14 @@ export default function Controls({ state, actions }) {
 
       <div>
 
-        <label>
+        <label htmlFor="font-size-range">
           Font Size
           {" "}
           {state.fontSize}px
         </label>
 
         <input
+          id="font-size-range"
           type="range"
           min={MIN_FONT_SIZE}
           max={MAX_FONT_SIZE}
@@ -35,13 +36,14 @@ export default function Controls({ state, actions }) {
 
       <div>
 
-        <label>
+        <label htmlFor="tracking-range">
           Tracking
           {" "}
           {state.tracking}
         </label>
 
         <input
+          id="tracking-range"
           type="range"
           min={MIN_TRACKING}
           max={MAX_TRACKING}
@@ -55,13 +57,14 @@ export default function Controls({ state, actions }) {
 
       <div>
 
-        <label>
+        <label htmlFor="line-height-range">
           Line Height
           {" "}
           {state.lineHeight}
         </label>
 
         <input
+          id="line-height-range"
           type="range"
           min={MIN_LINE_HEIGHT}
           max={MAX_LINE_HEIGHT}

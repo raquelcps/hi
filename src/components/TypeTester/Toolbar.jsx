@@ -13,9 +13,10 @@ export default function Toolbar({ state, actions }) {
 
       <div>
 
-        <label>Font</label>
+        <label htmlFor="font-select">Font</label>
 
         <select
+          id="font-select"
           value={state.font}
           onChange={(event) => {
             const newFont = fonts.find(
@@ -40,9 +41,10 @@ export default function Toolbar({ state, actions }) {
 
       <div>
 
-        <label>Style</label>
+        <label htmlFor="style-select">Style</label>
 
         <select
+          id="style-select"
           value={state.style}
           onChange={(event) =>
             actions.setStyle(event.target.value)
@@ -62,9 +64,10 @@ export default function Toolbar({ state, actions }) {
 
       <div>
 
-        <label>View</label>
+        <label htmlFor="view-select">View</label>
 
         <select
+          id="view-select"
           value={state.view}
           onChange={(event) =>
             actions.setView(event.target.value)
@@ -84,9 +87,10 @@ export default function Toolbar({ state, actions }) {
 
       <div>
 
-        <label>Text</label>
+        <label htmlFor="text-input">Text</label>
 
         <input
+          id="text-input"
           type="text"
           value={state.text}
           onChange={(event) =>
