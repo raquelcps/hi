@@ -12,6 +12,7 @@ import Toolbar from "./Toolbar";
 import TextInput from "./TextInput";
 import Controls from "./Controls";
 import Specimen from "./Specimen";
+import CssPanel from "./CssPanel";
 
 // #region styled-components
 const StyledTypeTester = styled.section`
@@ -143,7 +144,8 @@ const TypeTester = () => {
           <h3>Specimen Lab</h3>
 
           <p className="text-font">I built the Specimen Lab to help me evaluate fonts that I design.</p>
-          <p className="text-font">The Specimen Lab allows me to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking to see how the font performs in different scenarios.</p> 
+          <p className="text-font">The Specimen Lab allows me to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking to see how the font performs in different scenarios.
+            An interactive React application for exploring my original typefaces. Built to showcase web typography, OpenType features, and responsive layout in real time.</p> 
         </Container>
         <Container className="mt-5 text-font justify-content-center main-container">
           <div>
@@ -164,6 +166,10 @@ const TypeTester = () => {
           </div>
           <div>
             <Specimen
+              state={state}
+            />
+
+            <CssPanel
               state={state}
             />
           </div>
