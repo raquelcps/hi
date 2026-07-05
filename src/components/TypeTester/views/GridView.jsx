@@ -39,7 +39,7 @@ const GridView = ({ state }) => {
   if (!currentFont) return null;
 
   return (
-    <Grid data-testid="grid-view">
+    <Grid data-testid="grid-view" className="grid-view">
       {currentFont.styles.map((style) => (
         <Card
           key={style.id}

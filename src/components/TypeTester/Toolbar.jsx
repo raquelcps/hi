@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 
 import { fonts } from "./data/fonts";
 import { AVAILABLE_VIEWS } from "./config";
@@ -9,9 +10,9 @@ export default function Toolbar({ state, actions }) {
   );
 
   return (
-    <div>
+    <div className="toolbar-section">
 
-      <div>
+      <div className="select-wrapper">
 
         <label htmlFor="font-select">Font</label>
 
@@ -37,9 +38,13 @@ export default function Toolbar({ state, actions }) {
           ))}
         </select>
 
+        <Icon
+          icon="mdi:chevron-down"
+          className="select-icon"
+        />
       </div>
 
-      <div>
+      <div className="select-wrapper">
 
         <label htmlFor="style-select">Style</label>
 
@@ -60,9 +65,14 @@ export default function Toolbar({ state, actions }) {
           ))}
         </select>
 
+        <Icon
+          icon="mdi:chevron-down"
+          className="select-icon"
+        />
+
       </div>
 
-      <div>
+      <div className="select-wrapper">
 
         <label htmlFor="view-select">View</label>
 
@@ -83,27 +93,11 @@ export default function Toolbar({ state, actions }) {
           ))}
         </select>
 
-      </div>
-
-      <div>
-
-        <label htmlFor="text-input">Text</label>
-
-        <input
-          id="text-input"
-          type="text"
-          value={state.text}
-          onChange={(event) =>
-            actions.setText(event.target.value)
-          }
+        <Icon
+          icon="mdi:chevron-down"
+          className="select-icon"
         />
-
       </div>
-
     </div>
   );
 }
-// Font selector
-// Style selector
-// View selector
-// Text input

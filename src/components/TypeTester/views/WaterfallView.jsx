@@ -24,7 +24,7 @@ const WaterfallView = ({ state }) => {
   const baseSize = Number(state.fontSize);
 
   return (
-    <div data-testid="waterfall-view">
+    <div data-testid="waterfall-view" className="waterfall-view">
       <Wrapper>
         {WATERFALL_SCALE_STEPS.map((scale, index) => {
           const size = baseSize * scale;

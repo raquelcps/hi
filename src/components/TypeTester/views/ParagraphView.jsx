@@ -4,7 +4,6 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-
   padding: 2rem;
 `;
 
@@ -25,7 +24,7 @@ const SpecimenText = styled.p`
 
 const ParagraphView = ({ state }) => {
   return (
-    <Wrapper data-testid="paragraph-view">
+    <Wrapper data-testid="paragraph-view" className="paragraph-view">
       <ParagraphContainer>
         <SpecimenText
           fontSize={state.fontSize}

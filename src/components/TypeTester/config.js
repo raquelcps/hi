@@ -14,10 +14,10 @@ export const DEFAULT_LINE_HEIGHT = 1.3;
 
 export const DEFAULT_TRACKING = 0;
 
-export const MIN_FONT_SIZE = 12;
+export const MIN_FONT_SIZE = 8;
 export const MAX_FONT_SIZE = 200;
 
-export const MIN_TRACKING = -100;
+export const MIN_TRACKING = -20;
 export const MAX_TRACKING = 200;
 
 export const MIN_LINE_HEIGHT = 0.8;

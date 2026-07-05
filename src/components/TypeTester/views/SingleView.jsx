@@ -24,7 +24,7 @@ const SpecimenText = styled.p`
 
 const SingleView = ({ state }) => {
   return (
-    <StyledSingleView data-testid="single-view">
+    <StyledSingleView data-testid="single-view" className="single-view">
       <SpecimenText
         data-testid="specimen-text"
         fontSize={state.fontSize}

@@ -18,7 +18,7 @@ describe("TypeTester", () => {
     const fontSelect = screen.getByLabelText("Font");
     const styleSelect = screen.getByLabelText("Style");
     const viewSelect = screen.getByLabelText("View");
-    const textInput = screen.getByLabelText("Text");
+    const textInput = screen.getByLabelText("Text Input");
 
     expect(fontSelect).toBeInTheDocument();
     expect(styleSelect).toBeInTheDocument();
@@ -42,7 +42,7 @@ describe("TypeTester", () => {
 
     render(<TypeTester />);
 
-    const textInput = screen.getByLabelText("Text");
+    const textInput = screen.getByLabelText("Text Input");
 
     const newText = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

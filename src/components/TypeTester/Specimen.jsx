@@ -15,5 +15,10 @@ const views = {
 export default function Specimen({ state }) {
   const View = views[state.view];
 
-  return <View state={state} />;
+  return (
+    <div>
+      <label>Output</label>
+      <View state={state} />
+    </div>
+  );
 }
