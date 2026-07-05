@@ -20,20 +20,23 @@ export const fonts = [
     ],
   },
   {
-    id: "font-two",
-    family: "Font Two",
+    id: "cps-semillas",
+    family: "CPS Semillas",
     styles: [
       {
         id: "smooth",
         name: "Smooth",
+        family: "CPS Semillas Smooth",
       },
       {
         id: "sprinkle",
         name: "Sprinkle",
+        family: "CPS Semillas Sprinkle",
       },
       {
         id: "scatter",
         name: "Scatter",
+        family: "CPS Semillas Scatter",
       },
     ],
   },

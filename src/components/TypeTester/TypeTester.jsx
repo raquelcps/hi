@@ -1,6 +1,12 @@
 import React from "react";
 // Styles
 import styled from "styled-components";
+// Styles
+import "./custom.scss";
+// Fonts
+import "./assets/fonts/cpssemillas-scatter.otf";
+import "./assets/fonts/cpssemillas-smooth.otf";
+import "./assets/fonts/cpssemillas-sprinkle.otf";
 // Components
 import { Element } from "react-scroll";
 import Title from "../Title";
@@ -26,10 +32,14 @@ const StyledTypeTester = styled.section`
   .text-font, .text-font-italic {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
   }
+
+  .cps-semillas-font {
+    font-family: "CPS Semillas Smooth", sans-serif;
+  }
   // Create the main columns for the tools and specimen
   .main-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     gap: 4.5rem;
   }
   @media (max-width: 768px) {

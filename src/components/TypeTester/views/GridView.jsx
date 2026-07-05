@@ -24,6 +24,8 @@ const StyleName = styled.h3`
 const SpecimenText = styled.p`
   margin: 0;
 
+  font-family: ${({ fontFamily }) => fontFamily};
+  
   font-size: ${({ fontSize }) => `${fontSize}px`};
   line-height: ${({ lineHeight }) => lineHeight};
   letter-spacing: ${({ tracking }) => `${tracking}px`};
@@ -48,6 +50,7 @@ const GridView = ({ state }) => {
           <StyleName>{style.name}</StyleName>
 
           <SpecimenText
+            fontFamily={style.family}
             fontSize={state.fontSize}
             lineHeight={state.lineHeight}
             tracking={state.tracking}

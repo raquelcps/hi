@@ -62,9 +62,9 @@ describe("TypeTester", () => {
     const fontSelect = screen.getByLabelText("Font");
     const styleSelect = screen.getByLabelText("Style");
 
-    await user.selectOptions(fontSelect, "font-two");
+    await user.selectOptions(fontSelect, "cps-semillas");
 
-    expect(fontSelect).toHaveValue("font-two");
+    expect(fontSelect).toHaveValue("cps-semillas");
     expect(styleSelect).toHaveValue("smooth");
 
     expect(

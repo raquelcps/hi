@@ -15,7 +15,7 @@ const CssPanel = ({ state }) => {
 
   const css = useMemo(() => {
     const declarations = [
-      `font-family: "${selectedFont.family}";`,
+      `font-family: "${selectedStyle.family}";`,
       `font-size: ${state.fontSize}px;`,
       `line-height: ${state.lineHeight};`,
       `letter-spacing: ${state.tracking}px;`,
