@@ -13,6 +13,7 @@ Variables
   --min-footer-height: 11vh;
   --card-height: 22rem;
   --primary-blue: #569cd6;
+  --primary-light-blue: #a5d6ff;
   --primary-green: #4ec9b0;
   --primary-orange: #f08f69;
   --primary-yellow: #f1e170;

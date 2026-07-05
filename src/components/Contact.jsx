@@ -59,7 +59,9 @@ const Contact = ({ email, instagramLink }) => {
                 Email:
               </h5>
               <h5 className="mb-3 text-font-italic">
-                {email}
+                <a href={`mailto:${email}`}>
+                  {email}
+                </a>
               </h5>
             </Row>
             <Row className="mt-5 text-center">

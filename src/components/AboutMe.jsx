@@ -24,24 +24,25 @@ const StyledAboutMe = styled.section`
   .text-font {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
   }
-  .experience-list ul{
+
+  .experience-list ul {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 2rem;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
   }
   .experience-list li {
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     border-left: 2px solid ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
   }
   .experience-list li:first-child {
     border-left: none;
     padding-left: 0;
   }
-  .experience-list li h5 {
-    font-size: 1rem;
+  .experience-list li {
+    font-size: 1.25rem;
   }
 
   @media (max-width: 767.98px) {
@@ -92,7 +93,7 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
             </Col>
           </Row>
           <Row className="d-flex justify-content-center mt-5 text-font">
-            <Col xs={12} md={5} className="d-flex flex-column experience-list text-center">
+            <Col className="d-flex flex-column experience-list text-center mt-5">
               <ul>
                 {experienceList.map((experience, index) => (
                   <li key={index}>

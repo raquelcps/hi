@@ -31,13 +31,13 @@ const Home = () => {
           bio={bio}
           moreInfo={moreInfo}
         />
-        <Skills />
         <Projects
           filteredProjects={filteredProjects}
           projectsIntro={projectsIntro}
           caseStudyIntro={caseStudyIntro}
           caseStudyMore={caseStudyMore}
         />
+        <Skills />
         <Contact
           email={email}
           instagramLink={instagramLink}

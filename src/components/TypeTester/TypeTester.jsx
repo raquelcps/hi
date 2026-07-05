@@ -9,7 +9,7 @@ import "./assets/fonts/cpssemillas-smooth.otf";
 import "./assets/fonts/cpssemillas-sprinkle.otf";
 // Components
 import { Element } from "react-scroll";
-import Title from "../Title";
+// import Title from "../Title";
 import { Col, Container, Row } from "react-bootstrap";
 
 import useTypeTester from "./hooks/useTypeTester";
@@ -26,16 +26,16 @@ const StyledTypeTester = styled.section`
   p a {
     text-decoration: none;
   }
-  .title {
-    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
-  }
+  // .title {
+  //   color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+  // }
   .text-font, .text-font-italic {
-    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+    color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-light-blue)"};
   }
 
-  .cps-semillas-font {
-    font-family: "CPS Semillas Smooth", sans-serif;
-  }
+  // .cps-semillas-font {
+  //   font-family: "CPS Semillas Smooth", sans-serif;
+  // }
   // Create the main columns for the tools and specimen
   .main-container {
     display: grid;
@@ -117,11 +117,6 @@ const StyledTypeTester = styled.section`
   .controls-section input {
     margin-bottom: 1.55rem;
   }
-  // .controls-section {
-  //   display: grid;
-  //   grid-template-columns: repeat(3, 1fr);
-  //   gap: 2rem;
-  // }
   .multiline-label {
     white-space: pre-line;
   }
@@ -150,13 +145,18 @@ const TypeTester = () => {
   <Element name={"TypeTester"} id="type-tester">
     <StyledTypeTester className="section">
       <Container>
-        <Container className="project-intro">
+        <Row className="project-intro text-font">
+          <Col className="col-12 col-md-10 col-lg-8 mx-auto">
           <h3>Specimen Lab</h3>
 
-          <p className="text-font">I built the Specimen Lab to help me evaluate fonts that I design.</p>
-          <p className="text-font">The Specimen Lab allows me to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking to see how the font performs in different scenarios.
-            An interactive React application for exploring my original typefaces. Built to showcase web typography, OpenType features, and responsive layout in real time.</p> 
-        </Container>
+          <p>
+            Specimen Lab is an interactive React application for exploring my original typefaces. I built it to help me evaluate fonts by testing them in various scenarios.
+          </p>
+          <p>
+            It allows me to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking. To tie it back to my design and development work, I included a CSS Panel to view and copy the CSS code for the selected font and style.
+          </p>
+          </Col>
+        </Row>
         <Container className="mt-5 text-font justify-content-center main-container">
           <div>
             <Toolbar

@@ -39,15 +39,15 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const bio =
-  "Fullstack Web Developer and Designer";
+  "Full Stack Web Developer and Designer";
 export const moreInfo =
-  "I am an experienced developer with a background in librarianship and design. Both areas have shaped my user-centered approach and love for front-end development.";
+  "I am an experienced developer with a background in librarianship and design. Both areas have shaped my user-centered approach and love for front end development.";
 
 export const experienceList = [
-  "Fullstack Developer (6+ yrs)",
+  "Full Stack Developer (6+ yrs)",
   "Front End 🧡",
-  "Librarian (6+ yrs)",
-  "Designer (10+ yrs)"
+  "Librarian",
+  "Designer"
 ]
 
 /* Skills
@@ -57,7 +57,7 @@ export const experienceList = [
 export const skillsList = [
   "HTML/CSS",
   "JavaScript",
-  "Ruby (MVC architecture)",
+  "Ruby on Rails",
   "Angular (component-based design)",
   "Design Systems",
   "RSpec/Capybara/Selenium",

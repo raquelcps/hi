@@ -23,8 +23,8 @@ const navLinks = {
   to: [
     { id: "1T", name: "Home", to: "Home" },
     { id: "2T", name: "About Me", to: "About" },
-    { id: "3T", name: "Skills", to: "Skills" },
-    { id: "4T", name: "Projects", to: "Projects" },
+    { id: "3T", name: "Projects", to: "Projects" },
+    { id: "4T", name: "Skills", to: "Skills" },
     { id: "5T", name: "Contact", to: "Contact" },
   ],
 };

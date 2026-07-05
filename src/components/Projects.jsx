@@ -76,16 +76,16 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
   // #region styled-components
   const StyledSProjects = styled.section`
     .title {
-      color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+      color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-light-blue)"};
     }
     .text-font {
-      color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+      color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-light-blue)"};
     }
     .btn {
-      border-color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
-      color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+      border-color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-light-blue)"};
+      color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-light-blue)"};
       &:hover {
-        background-color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
+        background-color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-light-blue)"};
         color: ${({ theme }) => theme.name === "light" ? "#fff" : "#000"};
       }
     }
@@ -97,7 +97,7 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
       <StyledSProjects className="section">
         <Container>
           <Container className="d-flex justify-content-center">
-            <Title size={"h2"} text={"Projects"} color={"green"} />
+            <Title size={"h2"} text={"Projects"} color={"light-blue"} />
           </Container>
           <Row className="align-items-start mt-5 text-font">
             <p className="text-center h5">{projectsIntro}</p>
