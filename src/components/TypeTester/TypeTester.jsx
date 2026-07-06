@@ -26,30 +26,20 @@ const StyledTypeTester = styled.div`
   p a {
     text-decoration: none;
   }
-  // .title {
-  //   color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
-  // }
   .text-font, .text-font-italic {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-light-blue)"};
   }
 
-  // .cps-semillas-font {
-  //   font-family: "CPS Semillas Smooth", sans-serif;
-  // }
   // Create the main columns for the tools and specimen
   .main-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 4.5rem;
+    gap: 2.5rem;
   }
   .main-container > div {
     min-width: 0;
   }
-  @media (max-width: 768px) {
-    .main-container {
-      grid-template-columns: 1fr;
-    }
-  }
+ 
   // Style the tools section
   .main-container label {
     display: block;
@@ -63,8 +53,6 @@ const StyledTypeTester = styled.div`
   .main-container select,
   .main-container input {
     width: 100%;
-
-    // padding: .65rem .85rem;
 
     border: 1px solid #d8d8d8;
     border-radius: 6px;
@@ -127,16 +115,24 @@ const StyledTypeTester = styled.div`
   .waterfall-view,
   .paragraph-view,
   .grid-view {
-    // border: 1px solid #d8d8d8;
     border: 1px solid #f9f9f924;
     border-radius: 6px;
-    // background-color: #f9f9f9;
     background-color: #f9f9f924;
     overflow: hidden;
   }
 
   .project-intro {
     margin-bottom: 4rem;
+    padding-right: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    .main-container {
+      grid-template-columns: 1fr;
+    }
+    .project-intro {
+      padding-right: 0rem;
+    }
   }
 `;
 // #endregion
@@ -153,10 +149,7 @@ const TypeTester = () => {
           <h3>Specimen Lab</h3>
 
           <p>
-            Specimen Lab is an interactive React application for exploring my original typefaces. I built it to help me evaluate fonts by testing them in various scenarios.
-          </p>
-          <p>
-            It allows me to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking. To tie it back to my design and development work, I included a CSS Panel to view and copy the CSS code for the selected font and style.
+            Specimen Lab is an interactive React application for exploring my original typefaces. I built it to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking. To tie it back to my design and development work, I included a CSS Panel to view and copy the CSS code for the selected font and style.
           </p>
           </Col>
         </Row>

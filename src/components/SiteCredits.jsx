@@ -8,7 +8,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 // #region styled-components
 const StyledSiteCredits = styled.section`
-  min-height: calc(100vh - var(--nav-height) - 3rem) !important;
+  min-height: calc(100vh - var(--nav-height) - 5rem) !important;
   p a {
     text-decoration: none;
   }

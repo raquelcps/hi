@@ -87,9 +87,9 @@ describe("TypeTester", () => {
 
     const styleSelect = screen.getByLabelText("Style");
 
-    await user.selectOptions(styleSelect, "bold");
+    await user.selectOptions(styleSelect, "black");
 
-    expect(styleSelect).toHaveValue("bold");
+    expect(styleSelect).toHaveValue("black");
   });
 
   test("changing font size updates the specimen", async () => {

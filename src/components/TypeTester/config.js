@@ -4,7 +4,7 @@ export const DEFAULT_TEXT = "The quick brown fox jumps over the lazy dog.";
 
 export const DEFAULT_VIEW = "single";
 
-export const DEFAULT_FONT = "font-one";
+export const DEFAULT_FONT = "cps-momentum";
 
 export const DEFAULT_STYLE = "regular";
 

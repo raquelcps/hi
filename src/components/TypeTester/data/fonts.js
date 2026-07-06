@@ -2,20 +2,23 @@
 
 export const fonts = [
   {
-    id: "font-one",
-    family: "Font One",
+    id: "cps-momentum",
+    family: "CPS Momentum",
     styles: [
       {
         id: "regular",
         name: "Regular",
+        family: "CPS Momentum Regular",
       },
       {
         id: "italic",
         name: "Italic",
+        family: "CPS Momentum Italic",
       },
       {
-        id: "bold",
-        name: "Bold",
+        id: "black",
+        name: "Black",
+        family: "CPS Momentum Black",
       },
     ],
   },
@@ -41,12 +44,13 @@ export const fonts = [
     ],
   },
   {
-    id: "font-three",
-    family: "Font Three",
+    id: "cps-mechanick",
+    family: "CPS Mechanick",
     styles: [
       {
         id: "regular",
         name: "Regular",
+        family: "CPS Mechanick Regular",
       },
     ],
   },

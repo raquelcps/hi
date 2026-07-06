@@ -99,12 +99,9 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
           <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Projects"} color={"light-blue"} />
           </Container>
-          {/* <Row className="align-items-start mt-5 text-font">
-            <p className="text-center h5">{projectsIntro}</p>
-          </Row>
-          {content} */}
+
           <Container>
-            <Row className="project-container justify-content-center mt-5 text-font">
+            <Row className="project-container justify-content-center mt-3 text-font">
               <Col xs={12} md={12} className="mt-5">
                 <TypeTester />
               </Col>
