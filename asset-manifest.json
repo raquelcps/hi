@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hi/static/css/main.af8933d5.css",
-    "main.js": "/hi/static/js/main.add0ae02.js",
+    "main.css": "/hi/static/css/main.36421ea3.css",
+    "main.js": "/hi/static/js/main.d3e78a44.js",
     "static/media/jwe_logo_save.gif": "/hi/static/media/jwe_logo_save.5fe202d2adf5bacfdf71.gif",
     "static/media/jwe_uploader_requirements.png": "/hi/static/media/jwe_uploader_requirements.d3984060ac9203fb0a73.png",
     "static/media/jwe_uploader_og_instructions.png": "/hi/static/media/jwe_uploader_og_instructions.f4b1090889402b5b1edd.png",
@@ -17,19 +17,26 @@
     "static/media/MonaspaceKrypton-SemiBold.woff2": "/hi/static/media/MonaspaceKrypton-SemiBold.fb6bbf439ffa2fc1661b.woff2",
     "static/media/MonaspaceKrypton-Medium.woff2": "/hi/static/media/MonaspaceKrypton-Medium.1d226a9fc58feb8e91f3.woff2",
     "static/media/floppyLogo.png": "/hi/static/media/floppyLogo.13a5c01303a2b5e27851.png",
+    "static/media/momentum-italic-1-20-24.otf": "/hi/static/media/momentum-italic-1-20-24.10128b495510d8a9c907.otf",
+    "static/media/momentum-regular-1-20-24.otf": "/hi/static/media/momentum-regular-1-20-24.cb75102ed4adc00f2f3c.otf",
+    "static/media/momentum-black-1-20-24.otf": "/hi/static/media/momentum-black-1-20-24.f1ef19d07c5db1428187.otf",
+    "static/media/cpssemillas-sprinkle.otf": "/hi/static/media/cpssemillas-sprinkle.9fbe34e3a0fc21a8a1a0.otf",
+    "static/media/cpssemillas-smooth.otf": "/hi/static/media/cpssemillas-smooth.e7811c65c96783d73f96.otf",
+    "static/media/cpssemillas-scatter.otf": "/hi/static/media/cpssemillas-scatter.a6a8c368461d56c8ba65.otf",
     "service-worker.js": "/hi/service-worker.js",
     "static/media/carbon--basketball.png": "/hi/static/media/carbon--basketball.c9aac11f7bafda8c4b4c.png",
     "static/media/carbon--user-profile.png": "/hi/static/media/carbon--user-profile.1e49bcfd177d788f39f4.png",
+    "static/media/mechanick v.1.otf": "/hi/static/media/mechanick v.1.478b003d16a77776bf8e.otf",
     "static/media/GH.svg": "/hi/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
     "static/media/defaultNavLogo.svg": "/hi/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/logo.svg": "/hi/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/hi/index.html",
     "static/media/raquelcpsCodeLogo.svg": "/hi/static/media/raquelcpsCodeLogo.72ad15a3c282a2af2186e0fe6b6d6dd2.svg",
-    "main.af8933d5.css.map": "/hi/static/css/main.af8933d5.css.map",
-    "main.add0ae02.js.map": "/hi/static/js/main.add0ae02.js.map"
+    "main.36421ea3.css.map": "/hi/static/css/main.36421ea3.css.map",
+    "main.d3e78a44.js.map": "/hi/static/js/main.d3e78a44.js.map"
   },
   "entrypoints": [
-    "static/css/main.af8933d5.css",
-    "static/js/main.add0ae02.js"
+    "static/css/main.36421ea3.css",
+    "static/js/main.d3e78a44.js"
   ]
 }
