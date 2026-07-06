@@ -21,7 +21,7 @@ import Specimen from "./Specimen";
 import CssPanel from "./CssPanel";
 
 // #region styled-components
-const StyledTypeTester = styled.section`
+const StyledTypeTester = styled.div`
   min-height: calc(100vh - var(--nav-height) - 3rem) !important;
   p a {
     text-decoration: none;
@@ -41,6 +41,9 @@ const StyledTypeTester = styled.section`
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 4.5rem;
+  }
+  .main-container > div {
+    min-width: 0;
   }
   @media (max-width: 768px) {
     .main-container {
@@ -143,10 +146,10 @@ const TypeTester = () => {
 
   return (
   <Element name={"TypeTester"} id="type-tester">
-    <StyledTypeTester className="section">
+    <StyledTypeTester className="div">
       <Container>
-        <Row className="project-intro text-font">
-          <Col className="col-12 col-md-10 col-lg-8 mx-auto">
+        <Row className="project-intro text-font col-md-10 col-sm-12 mx-auto">
+          <Col className="">
           <h3>Specimen Lab</h3>
 
           <p>
@@ -157,7 +160,7 @@ const TypeTester = () => {
           </p>
           </Col>
         </Row>
-        <Container className="mt-5 text-font justify-content-center main-container">
+        <Row className="mt-5 text-font justify-content-center main-container col-md-10 col-sm-12 mx-auto">
           <div>
             <Toolbar
               state={state}
@@ -183,7 +186,7 @@ const TypeTester = () => {
               state={state}
             />
           </div>
-        </Container>
+        </Row>
 
       </Container>
     </StyledTypeTester>

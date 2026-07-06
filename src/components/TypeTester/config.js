@@ -31,3 +31,4 @@ export const AVAILABLE_VIEWS = [
 ];
 
 export const WATERFALL_SCALE_STEPS = [1, 1.25, 1.6, 2, 2.6];
+export const MOBILE_WATERFALL_SCALE_STEPS = [0.75, 1.25, 2, 4];

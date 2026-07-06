@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { fonts } from "../data/fonts";
 
-import { WATERFALL_SCALE_STEPS } from "../config";
+import {
+  WATERFALL_SCALE_STEPS,
+  MOBILE_WATERFALL_SCALE_STEPS
+} from "../config";
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,6 +28,25 @@ const SpecimenText = styled.p`
 `;
 
 const WaterfallView = ({ state }) => {
+  const [isMobile, setIsMobile] = useState(
+    window.innerWidth <= 700
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 700);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () =>
+      window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const scaleSteps = isMobile
+  ? MOBILE_WATERFALL_SCALE_STEPS
+  : WATERFALL_SCALE_STEPS;
+
   const selectedFont = fonts.find(
     (font) => font.id === state.font
   );
@@ -40,7 +62,7 @@ const WaterfallView = ({ state }) => {
   return (
     <div data-testid="waterfall-view" className="waterfall-view">
       <Wrapper>
-        {WATERFALL_SCALE_STEPS.map((scale, index) => {
+        {scaleSteps.map((scale, index) => {
           const size = baseSize * scale;
 
           return (
