@@ -1,3 +1,131 @@
+# Specimen Lab | [DEMO](https://raquelcps.github.io/hi/) | [REPO](https://github.com/raquelcps/hi/tree/main/src/components/TypeTester)
+
+The Specimen Lab is an interactive typography playground built with React for exploring custom typefaces through multiple specimen views.
+
+The project began as a focused front end exercise while I was rebuilding my software portfolio. I wanted a project small enough to complete quickly, but rich enough to demonstrate thoughtful React architecture, state management, responsive design, and testing. Because I also design typefaces, a specimen viewer was something I wanted to use and was a nice intersection of engineering and design.
+
+Rather than treating typography as static images, Specimen Lab allows users to experiment with a font's characteristics in real time and immediately see the results.
+
+I built it inside of my portfolio project, which is itself a GitHub Pages template I decided to use to practice React and easily deploy a portfolio, because I wanted to continue building with it and it was fast and easy to do this way. You can read more about the portfolio project further [below](#my-portfolio-and-react-practice)
+
+## Features
+
+* Multiple specimen views
+
+  * Single View
+  * Paragraph View
+  * Waterfall View
+  * Grid View
+* Adjustable typography controls
+
+  * Font selection
+  * Font size
+  * Line height
+  * Letter spacing (tracking)
+* Live CSS generation
+* Responsive layouts
+* Custom fonts loaded directly into the application
+* Automated tests using React Testing Library
+
+## Architecture
+
+One of the primary goals of this project was to build an application that could continue to grow without becoming difficult to maintain.
+
+### Component Organization
+
+The interface is divided into small, focused components with clear responsibilities.
+
+Examples include:
+
+* Toolbar
+* Controls
+* TextInput
+* CssPanel
+* Individual specimen views
+
+Each view is responsible only for rendering typography in a particular format, while shared application state lives elsewhere.
+
+This separation makes it straightforward to add new specimen views without rewriting existing functionality.
+
+### Centralized State
+
+Global application state is managed with Redux Toolkit.
+
+Rather than allowing each component to manage its own typography settings, the application's controls update a single source of truth.
+
+This allows every specimen view to stay synchronized automatically while avoiding unnecessary duplication of state.
+
+### View Architecture
+
+Specimen rendering is intentionally separated into independent view components.
+
+Current views include:
+
+* Single
+* Paragraph
+* Waterfall
+* Grid
+
+Each view receives typography settings from shared state and determines only how those settings should be presented.
+
+Because of this structure, adding additional layouts requires very little modification to the rest of the application.
+
+### Styling
+
+Styling combines Bootstrap for layout with styled-components for component-level styling.
+
+This allows layout concerns and component concerns to remain largely independent while making responsive behavior easier to manage.
+
+## Testing
+
+The project includes automated tests using React Testing Library.
+
+Current tests verify:
+
+* Initial rendering
+* Toolbar behavior
+* Typography control updates
+* View switching
+* CSS generation
+* User interactions
+
+The goal of the test suite is to verify user-visible behavior rather than implementation details, making future refactoring safer.
+
+## Design Philosophy
+
+Specimen Lab is built around a simple idea:
+
+Typography is best understood through interaction.
+
+Instead of presenting a static specimen sheet, the application encourages experimentation. Users can change settings, compare layouts, and immediately understand how typography behaves in different contexts.
+
+That same philosophy influenced the engineering decisions behind the project. Components are intentionally modular, state is centralized, and responsibilities are clearly separated so the application can continue to evolve without becoming difficult to reason about.
+
+## Future Improvements
+
+Potential future enhancements include:
+
+* URL state for shareable specimens
+* Variable font support
+* Additional specimen layouts
+* Dark/light theme persistence
+* Downloadable specimen sheets
+* OpenType feature controls
+* Additional automated test coverage
+
+## Technology
+
+* React
+* Redux Toolkit
+* styled-components
+* Bootstrap
+* React Testing Library
+
+---
+
+This project represents the intersection of my interests in software engineering, typography, and user experience. It demonstrates how thoughtful frontend architecture can support an interface that is both flexible for developers and approachable for users.
+
+
 # My Portfolio and React Practice
 
 I wanted to get a portfolio up in a limited amount of time. I also wanted to explore using React. I found this [template](https://github.com/mshuber1981/github-react-portfolio-template/tree/main?tab=readme-ov-file) and it fit the bill perfectly.

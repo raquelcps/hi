@@ -16,9 +16,7 @@ import ThemeToggle from "./ThemeToggle";
 // #region constants
 const navLinks = {
   routes: [
-    { id: "1R", name: "Home", route: "/" },
-    // Replace All Projects with Case Study. Can add more routes as needed in the future.
-    { id: "2R", name: "Redesign Case Study", route: "/Redesign-Case-Study" },
+    { id: "1R", name: "Home", route: "/" }
   ],
   to: [
     { id: "1T", name: "Home", to: "Home" },
