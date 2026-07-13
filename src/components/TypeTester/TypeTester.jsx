@@ -39,7 +39,7 @@ const StyledTypeTester = styled.div`
   .main-container > div {
     min-width: 0;
   }
- 
+
   // Style the tools section
   .main-container label {
     display: block;
@@ -141,7 +141,7 @@ const TypeTester = () => {
   const { state, actions } = useTypeTester();
 
   return (
-  <Element name={"TypeTester"} id="type-tester">
+  <Element name={"TypeTester"}>
     <StyledTypeTester className="div">
       <Container>
         <Row className="project-intro text-font col-md-10 col-sm-12 mx-auto">

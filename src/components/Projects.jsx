@@ -18,12 +18,8 @@ import ProjectCard from "./ProjectCard";
 import TypeTester from "./TypeTester/TypeTester";
 
 // #region component
-const propTypes = {
-  projectsIntro: PropTypes.string,
-  caseStudyIntro: PropTypes.string,
-  caseStudyMore: PropTypes.string,
-};
-const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
+
+const Projects = () => {
   const theme = useSelector(selectMode);
   const projects = useSelector(selectProjects);
   const mainProjects = useSelector(selectMainProjects);
@@ -100,7 +96,7 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
             <Title size={"h2"} text={"Projects"} color={"light-blue"} />
           </Container>
 
-          <Container>
+          <Container id="specimen-lab">
             <Row className="project-container justify-content-center mt-3 text-font">
               <Col xs={12} md={12} className="mt-5">
                 <TypeTester />
@@ -108,17 +104,12 @@ const Projects = ({ projectsIntro, caseStudyIntro, caseStudyMore }) => {
             </Row>
           </Container>
 
-          <Row className="align-items-start mt-5 text-font">
-            <p className="text-center h5">{projectsIntro}</p>
-          </Row>
           {content}
         </Container>
       </StyledSProjects>
     </Element>
   );
 };
-
-Projects.propTypes = propTypes;
 // #endregion
 
 export default Projects;

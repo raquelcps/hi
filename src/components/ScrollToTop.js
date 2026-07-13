@@ -18,12 +18,17 @@ const ScrollToTop = () => {
     // Else scroll to id
     else {
       const id = hash.replace("#", "");
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView();
-      } else {
-        navigate("404", { replace: false });
-      }
+
+      // Wait for the element to be rendered in the DOM
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView();
+        } else {
+          navigate("404", { replace: false });
+        }
+      }, 100);
+      // The above code is now handled inside the setTimeout to wait for the element to be rendered in the DOM.
     }
   }, [pathname, hash, navigate]);
 
