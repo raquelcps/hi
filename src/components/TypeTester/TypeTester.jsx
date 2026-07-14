@@ -3,10 +3,6 @@ import React from "react";
 import styled from "styled-components";
 // Styles
 import "./custom.scss";
-// Fonts
-import "./assets/fonts/cpssemillas-scatter.otf";
-import "./assets/fonts/cpssemillas-smooth.otf";
-import "./assets/fonts/cpssemillas-sprinkle.otf";
 // Components
 import { Element } from "react-scroll";
 // import Title from "../Title";
