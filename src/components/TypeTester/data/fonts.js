@@ -11,14 +11,14 @@ export const fonts = [
         family: "CPS Momentum Regular",
       },
       {
-        id: "italic",
-        name: "Italic",
-        family: "CPS Momentum Italic",
-      },
-      {
         id: "black",
         name: "Black",
         family: "CPS Momentum Black",
+      },
+      {
+        id: "italic",
+        name: "Italic",
+        family: "CPS Momentum Italic",
       },
     ],
   },
