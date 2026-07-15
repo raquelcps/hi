@@ -23,7 +23,7 @@ const StyledTypeTester = styled.div`
   p a {
     text-decoration: none;
   }
-  .text-font, .text-font-italic {
+  .text-color{
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-light-blue)"};
   }
 
@@ -120,7 +120,6 @@ const StyledTypeTester = styled.div`
 
   .project-intro {
     margin-bottom: 4rem;
-    padding-right: 5rem;
   }
 
   @media (max-width: 768px) {
@@ -140,17 +139,17 @@ const TypeTester = () => {
   return (
   <Element name={"TypeTester"}>
     <StyledTypeTester className="div">
-      <Container>
-        <Row className="project-intro text-font col-md-10 col-sm-12 mx-auto">
-          <Col className="">
-          <h3>Specimen Lab</h3>
+      {/* <Container> */}
+        <Row className="project-intro justify-content-center text-color">
+          <Col className="col-md-9 col-sm-12">
+          <h3 className="text-font-semibold">Specimen Lab</h3>
 
-          <p>
+          <p className="text-font-regular">
             Specimen Lab is an interactive React application for exploring my original typefaces. I built it to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking. To tie it back to my design and development work, I included a CSS Panel to view and copy the CSS code for the selected font and style.
           </p>
           </Col>
         </Row>
-        <Row className="mt-5 text-font justify-content-center main-container col-md-10 col-sm-12 mx-auto">
+        <Row className="mt-5 text-font-regular text-color justify-content-center main-container col-md-9 col-sm-12 mx-auto">
           <div>
             <Toolbar
               state={state}
@@ -178,7 +177,7 @@ const TypeTester = () => {
           </div>
         </Row>
 
-      </Container>
+      {/* </Container> */}
     </StyledTypeTester>
   </Element>
 );

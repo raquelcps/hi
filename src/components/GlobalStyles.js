@@ -48,10 +48,12 @@ a:hover {
   text-transform: uppercase;
 }
 
-.text-font {
+.text-font-regular {
+  font-family: "Monaspace Neon Regular", monospace;
+}
+.text-font-semibold {
   font-family: "Monaspace Neon SemiBold", monospace;
 }
-
 .text-font-italic {
   font-family: "Monaspace Krypton SemiBoldItalic", monospace;
 }

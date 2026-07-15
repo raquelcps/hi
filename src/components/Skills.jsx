@@ -16,7 +16,7 @@ const StyledSkills = styled.section`
   .title {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-orange)"};
   }
-  .text-font {
+  .text-font-semibold, .text-font-italic {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-orange)"};
   }
 `;
@@ -33,7 +33,7 @@ const Skills = () => {
           <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Skills"} color={"orange"} />
           </Container>
-          <Row className="mt-3 align-items-center justify-content-center text-font">
+          <Row className="mt-3 align-items-center justify-content-center text-font-semibold">
             {skillData.map((skills) => {
               return (
                 <Col xs={4} key={skills.id} className="my-md-5 text-center">
@@ -45,7 +45,7 @@ const Skills = () => {
               );
             })}
           </Row>
-          <Row className="mt-3 justify-content-center text-font text-center">
+          <Row className="mt-3 justify-content-center text-font-italic text-center">
             <Col xs={10}>
               <h5>
                 Working on: WCAG accessibility standards, Python (via type design), React with Redux

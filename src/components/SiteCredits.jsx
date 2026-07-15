@@ -15,7 +15,7 @@ const StyledSiteCredits = styled.section`
   .title {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-yellow)"};
   }
-  .text-font, .text-font-italic {
+  .text-font-semibold, .text-font-italic {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-yellow)"};
   }
 `;
@@ -28,7 +28,7 @@ const SiteCredits = () => (
         <Container className="d-flex justify-content-center text-font-italic">
           <Title size={"h2"} text={"Site Credits"} color={"yellow"}  />
         </Container>
-        <Row className="mt-5 text-font text-center">
+        <Row className="mt-5 text-font-semibold text-center">
           <Col className="col-md-6 col-12 mb-4">
             <p>Fonts:</p>
             <p>

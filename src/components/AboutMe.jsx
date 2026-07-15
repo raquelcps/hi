@@ -21,7 +21,7 @@ const StyledAboutMe = styled.section`
   .title {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
   }
-  .text-font {
+  .text-color {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-green)"};
   }
 
@@ -78,8 +78,8 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
           <Row className="align-items-center mt-5">
             <Col className="d-flex flex-column col-md-6 col-12 mb-4 text-center">
               <Container>
-                {bio && <p className="text-font">{bio}</p>}
-                {moreInfo && <p className="text-font">{moreInfo}</p>}
+                {bio && <p className="text-font-semibold text-color">{bio}</p>}
+                {moreInfo && <p className="text-font-semibold text-color">{moreInfo}</p>}
               </Container>
             </Col>
             <Col className="d-md-block col-md-6 col-12 text-center">
@@ -92,7 +92,7 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
               />
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center mt-5 text-font">
+          <Row className="d-flex justify-content-center mt-5 text-font-semibold text-color">
             <Col className="d-flex flex-column experience-list text-center mt-5">
               <ul>
                 {experienceList.map((experience, index) => (

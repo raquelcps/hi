@@ -81,6 +81,8 @@ const Contact = ({ email, instagramLink }) => {
     </Element>
   );
 };
+
+Contact.propTypes = propTypes;
 // #endregion
 
 export default Contact;

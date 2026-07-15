@@ -22,6 +22,7 @@ const navLinks = {
     { id: "1T", name: "Home", to: "Home" },
     { id: "2T", name: "About Me", to: "About" },
     { id: "3T", name: "Projects", to: "Projects" },
+    { id: "3.4T", name: "Hoop Helix", to: "hoop-helix" },
     { id: "3.5T", name: "Specimen Lab", to: "TypeTester" },
     { id: "4T", name: "Skills", to: "Skills" },
     { id: "5T", name: "Contact", to: "Contact" },
