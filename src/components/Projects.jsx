@@ -138,8 +138,22 @@ const Projects = () => {
                 </p>
 
                 <div className="d-flex gap-3 mt-3">
-                  <Button>Live Demo</Button>
-                  <Button>GitHub</Button>
+                  <Button
+                    as="a"
+                    href="https://hoop-helix.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </Button>
+                  <Button
+                    as="a"
+                    href="https://github.com/raquelcps/nba-hoop-helix-playoffs-app-dup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </Button>
                 </div>
   
                 <div className="project-shot-wrap">
