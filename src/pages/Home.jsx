@@ -10,7 +10,18 @@ import Contact from "../components/Contact";
 import SiteCredits from "../components/SiteCredits";
 import BackToTop from "../components/BackToTop";
 // Config
-import { filteredProjects, bio, moreInfo, email, instagramLink, projectsIntro, caseStudyIntro, caseStudyMore } from "../config";
+import {
+  filteredProjects,
+  bio,
+  moreInfo,
+  email,
+  instagramLink,
+  linkedinLink,
+  projectsIntro,
+  specimenLabIntro,
+  hoopHelixIntro,
+  hoopHelixMore,
+} from "../config";
 // Utils
 import { updateTitle } from "../utils";
 
@@ -34,13 +45,15 @@ const Home = () => {
         <Projects
           filteredProjects={filteredProjects}
           projectsIntro={projectsIntro}
-          caseStudyIntro={caseStudyIntro}
-          caseStudyMore={caseStudyMore}
+          specimenLabIntro={specimenLabIntro}
+          hoopHelixIntro={hoopHelixIntro}
+          hoopHelixMore={hoopHelixMore}
         />
         <Skills />
         <Contact
           email={email}
           instagramLink={instagramLink}
+          linkedinLink={linkedinLink}
         />
         <SiteCredits />
       </main>

@@ -16,7 +16,7 @@ const StyledSkills = styled.section`
   .title {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-orange)"};
   }
-  .text-font-semibold, .text-font-italic {
+  .text-font-regular, .text-font-italic {
     color: ${({ theme }) => theme.name === "light" ? "#000" : "var(--primary-orange)"};
   }
 `;
@@ -29,14 +29,15 @@ const Skills = () => {
   return (
     <Element name={"Skills"} id="skills">
       <StyledSkills className="section">
-        <Container>
+        <Container className="text-center">
           <Container className="d-flex justify-content-center">
             <Title size={"h2"} text={"Skills"} color={"orange"} />
           </Container>
-          <Row className="mt-3 align-items-center justify-content-center text-font-semibold">
+
+          <Row className="mt-3 align-items-center text-font-regular">
             {skillData.map((skills) => {
               return (
-                <Col xs={4} key={skills.id} className="my-md-5 text-center">
+                <Col xs={4} key={skills.id} className="my-md-5">
                   <figure>
                     {skills.skill}
                     <figcaption>{skills.name}</figcaption>
@@ -45,11 +46,11 @@ const Skills = () => {
               );
             })}
           </Row>
-          <Row className="mt-3 justify-content-center text-font-italic text-center">
-            <Col xs={10}>
-              <h5>
+          <Row className="mt-3 justify-content-center text-font-regular text-center">
+            <Col xs={9}>
+              <p>
                 Working on: WCAG accessibility standards, Python (via type design), React with Redux
-              </h5>
+              </p>
             </Col>
           </Row>
           {/* Keep optional resume button. I will host it later. */}

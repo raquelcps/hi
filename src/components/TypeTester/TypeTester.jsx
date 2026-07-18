@@ -1,6 +1,7 @@
 import React from "react";
 // Styles
 import styled from "styled-components";
+import PropTypes from "prop-types";
 // Styles
 import "./custom.scss";
 
@@ -133,54 +134,61 @@ const StyledTypeTester = styled.div`
 `;
 // #endregion
 
-const TypeTester = () => {
+const propTypes = {
+  specimenLabIntro: PropTypes.string,
+};
+
+const TypeTester = ({ specimenLabIntro }) => {
   const { state, actions } = useTypeTester();
 
   return (
   <Element name={"TypeTester"}>
     <StyledTypeTester className="div">
-      {/* <Container> */}
-        <Row className="project-intro justify-content-center text-color">
-          <Col className="col-md-9 col-sm-12">
-          <h3 className="text-font-semibold">Specimen Lab</h3>
+      <Row className="project-intro justify-content-center text-color">
+        <Col className="col-md-8 col-sm-12">
+        <h3 className="text-font-semibold">Specimen Lab</h3>
 
+        {specimenLabIntro &&
           <p className="text-font-regular">
-            Specimen Lab is an interactive React application for exploring my original typefaces. I built it to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking. To tie it back to my design and development work, I included a CSS Panel to view and copy the CSS code for the selected font and style.
+            {specimenLabIntro}
           </p>
-          </Col>
-        </Row>
-        <Row className="mt-5 text-font-regular text-color justify-content-center main-container col-md-9 col-sm-12 mx-auto">
-          <div>
-            <Toolbar
-              state={state}
-              actions={actions}
-            />
+        }
+        </Col>
+      </Row>
 
-            <TextInput
-              state={state}
-              actions={actions}
-            />
+      <Row className="mt-5 text-font-regular text-color justify-content-center main-container col-md-9 col-sm-12 mx-auto">
+        <div>
+          <Toolbar
+            state={state}
+            actions={actions}
+          />
 
-            <Controls
-              state={state}
-              actions={actions}
-            />
-          </div>
-          <div>
-            <Specimen
-              state={state}
-            />
+          <TextInput
+            state={state}
+            actions={actions}
+          />
 
-            <CssPanel
-              state={state}
-            />
-          </div>
-        </Row>
+          <Controls
+            state={state}
+            actions={actions}
+          />
+        </div>
+        <div>
+          <Specimen
+            state={state}
+          />
 
-      {/* </Container> */}
+          <CssPanel
+            state={state}
+          />
+        </div>
+      </Row>
+
     </StyledTypeTester>
   </Element>
-);
+  );
 };
+
+TypeTester.propTypes = propTypes;
 
 export default TypeTester;

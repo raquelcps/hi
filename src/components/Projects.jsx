@@ -17,10 +17,17 @@ import Title from "./Title";
 import ProjectCard from "./ProjectCard";
 import TypeTester from "./TypeTester/TypeTester";
 
-import specimenShot from "../images/hoop-helix-team-profile-page.png";
+import hoopHelixScreenshot1 from "../images/hoop-helix-team-profile-page.png";
 // #region component
 
-const Projects = () => {
+const propTypes = {
+  projectsIntro: PropTypes.string,
+  specimenLabIntro: PropTypes.string,
+  hoopHelixIntro: PropTypes.string,
+  hoopHelixMore: PropTypes.string,
+};
+
+const Projects = ({ projectsIntro, specimenLabIntro, hoopHelixIntro, hoopHelixMore }) => {
   const theme = useSelector(selectMode);
   const projects = useSelector(selectProjects);
   const mainProjects = useSelector(selectMainProjects);
@@ -117,25 +124,34 @@ const Projects = () => {
             <Title size={"h2"} text={"Projects"} color={"light-blue"} />
           </Container>
 
+          <Container className="mt-3">
+            <Row className="project-intro justify-content-center text-color mt-3">
+              <Col lg={8}>
+                {projectsIntro &&
+              <p className="text-font-regular text-color">
+                {projectsIntro}
+              </p>
+            }
+              </Col>
+            </Row>
+          </Container>
+
           <Container id="hoop-helix" className="project-container mt-5">
             <Row className="project-intro justify-content-center text-color mt-3">
-              <Col lg={9}>
+              <Col lg={8}>
                 <h3 className="text-font-semibold">Hoop Helix</h3>
 
-                <p className="text-font-regular">
-                  Hoop Helix is a Ruby on Rails basketball analytics project that explores
-                  how individual players contribute to team success beyond traditional box
-                  score statistics. Built with live NBA Stats API data, it combines data
-                  visualization, responsive UI, and reusable Rails architecture to
-                  encourage statistical discovery.
-                </p>
+               {hoopHelixIntro &&
+                  <p className="text-font-regular">
+                    {hoopHelixIntro}
+                  </p>
+                }
 
-                <p className="text-font-regular">
-                  I originally built Hoop Helix while learning web development years ago. Revisiting it has become an opportunity to rethink the
-                  architecture, refine the user experience, and continue exploring new
-                  ways to visualize basketball. Future plans include WNBA support,
-                  expanded visualizations, and stronger automated testing.
-                </p>
+                {hoopHelixMore &&
+                  <p className="text-font-regular">
+                    {hoopHelixMore}
+                  </p>
+                }
 
                 <div className="d-flex gap-3 mt-3">
                   <Button
@@ -159,7 +175,7 @@ const Projects = () => {
                 <div className="project-shot-wrap">
                   <img
                     className="project-shot"
-                    src={specimenShot}
+                    src={hoopHelixScreenshot1}
                     alt="Hoop Helix team profile page screenshot"
                   />
                   <p className="project-shot-caption text-font-regular">
@@ -171,11 +187,9 @@ const Projects = () => {
           </Container>
 
           <Container id="specimen-lab" className="project-container mt-5">
-            {/* <Row className="project-container justify-content-center mt-3 text-color">
-              <Col xs={12} md={12} className="mt-5"> */}
-                <TypeTester />
-              {/* </Col>
-            </Row> */}
+            <TypeTester
+              specimenLabIntro={specimenLabIntro}
+            />
           </Container>
 
         </Container>
@@ -183,6 +197,8 @@ const Projects = () => {
     </Element>
   );
 };
+
+Projects.propTypes = propTypes;
 // #endregion
 
 export default Projects;

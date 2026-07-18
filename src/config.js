@@ -156,11 +156,17 @@ export const projectCardImages = [
 ];
 
 export const projectsIntro =
-  "View the code for a couple of recent projects.";
-export const caseStudyIntro =
-  "I don't just write code, I pay attention to user needs!";
-export const caseStudyMore =
-  "I wrote a case study for a real-life redesign project that I led from problem discovery through implementation and release. Find out more about the Journal Editor Redesign project.";
+  "I enjoy building software that invites exploration. Whether the subject is basketball statistics or typography, these projects combine engineering and design to help people discover something new.";
+
+export const hoopHelixMore =
+  "I originally built Hoop Helix while learning web development years ago. Revisiting it has become an opportunity to rethink the architecture, refine the user experience, and continue exploring new ways to visualize basketball. Future plans include WNBA support, expanded visualizations, and stronger automated testing.";
+
+export const hoopHelixIntro =
+  "Hoop Helix is a Ruby on Rails basketball analytics project that explores how individual players contribute to team success beyond traditional box score statistics. Built with live NBA Stats API data, it combines data visualization, responsive UI, and reusable Rails architecture to encourage statistical discovery.";
+
+  export const specimenLabIntro =
+    "Specimen Lab is an interactive React application for exploring my original typefaces. I built it to test different fonts, styles, and sizes in a variety of views. I can also adjust the line height and tracking. To tie it back to my design and development work, I included a CSS Panel to view and copy the CSS code for the selected font and style.";
+
 
 /* Contact Info
  ************************************************************** 
@@ -172,7 +178,9 @@ export const email =
 
 export const instagramLink =
   "https://instagram.com/chicagopublicskills";
-// export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+
+export const linkedinLink =
+  "https://www.linkedin.com/in/raquelcps/";
 
 // Footer icons theme (light or dark)
 export const footerTheme = "dark";
