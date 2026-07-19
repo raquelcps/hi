@@ -3,7 +3,7 @@
 Specimen Lab is an interactive typography playground built with React for exploring custom typefaces through multiple specimen views. Specimen Lab represents the intersection of my interests in software engineering, typography, and user experience.
 
 <p>
- <img width="700" alt="Font selection demo" src="https://github.com/user-attachments/assets/3ca59f61-b63b-4308-8beb-67e112bb54b7" />
+ <img width="700" alt="Font selection demo" src="README_images/specimen_lab_assets/specimen-lab-font-select.gif" />
  <br>
  <em>Figure 1: Instantly preview varied typography styles across multiple layout options.</em>
 </p>
@@ -13,7 +13,7 @@ Rather than treating typography as static images, Specimen Lab allows users to e
 The project began as a focused front end exercise while I was rebuilding my software portfolio. I wanted a project small enough to complete quickly, but rich enough to demonstrate thoughtful React architecture, state management, responsive design, and testing. Because I also design typefaces, a specimen viewer was something I personally wanted to use.
 
 <p>
- <img width="700" alt="CSS controls demo" src="https://github.com/user-attachments/assets/c4dc7b54-ef52-4687-9de9-998f5f5474b5" />
+ <img width="700" alt="CSS controls demo" src="README_images/specimen_lab_assets/Specimen-Lab-css-panel.gif" />
  <br>
   <em>Figure 2: Fine-tune size, tracking, and line-height, then copy the optimized CSS with one click.</em>
 </p>
