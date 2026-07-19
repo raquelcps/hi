@@ -1,12 +1,24 @@
-# Specimen Lab | [DEMO](https://raquelcps.github.io/hi/) | [REPO](https://github.com/raquelcps/hi/tree/main/src/components/TypeTester)
+# Specimen Lab | [DEMO](https://raquelcps.github.io/hi) | [CODE](https://github.com/raquelcps/hi/tree/main/src/components/TypeTester)
 
-The Specimen Lab is an interactive typography playground built with React for exploring custom typefaces through multiple specimen views.
+Specimen Lab is an interactive typography playground built with React for exploring custom typefaces through multiple specimen views. Specimen Lab represents the intersection of my interests in software engineering, typography, and user experience.
 
-The project began as a focused front end exercise while I was rebuilding my software portfolio. I wanted a project small enough to complete quickly, but rich enough to demonstrate thoughtful React architecture, state management, responsive design, and testing. Because I also design typefaces, a specimen viewer was something I wanted to use and was a nice intersection of engineering and design.
+<p>
+ <img width="700" alt="Font selection demo" src="https://github.com/user-attachments/assets/3ca59f61-b63b-4308-8beb-67e112bb54b7" />
+ <br>
+ <em>Figure 1: Instantly preview varied typography styles across multiple layout options.</em>
+</p>
 
-Rather than treating typography as static images, Specimen Lab allows users to experiment with a font's characteristics in real time and immediately see the results.
+Rather than treating typography as static images, Specimen Lab allows users to experiment with a font's characteristics in real time and immediately see the results. It demonstrates how thoughtful frontend architecture can support an interface that is both flexible for developers and approachable for users.
 
-I built it inside of my portfolio project, which is itself a GitHub Pages template I decided to use to practice React and easily deploy a portfolio, because I wanted to continue building with it and it was fast and easy to do this way. You can read more about the portfolio project further [below](#my-portfolio-and-react-practice)
+The project began as a focused front end exercise while I was rebuilding my software portfolio. I wanted a project small enough to complete quickly, but rich enough to demonstrate thoughtful React architecture, state management, responsive design, and testing. Because I also design typefaces, a specimen viewer was something I personally wanted to use.
+
+<p>
+ <img width="700" alt="CSS controls demo" src="https://github.com/user-attachments/assets/c4dc7b54-ef52-4687-9de9-998f5f5474b5" />
+ <br>
+  <em>Figure 2: Fine-tune size, tracking, and line-height, then copy the optimized CSS with one click.</em>
+</p>
+
+I built it inside of my portfolio project repo, which is itself a GitHub Pages template I decided to use to practice React, because I wanted to continue building with React and deploy quickly. Read more about the broader portfolio project [here](#my-portfolio-and-react-practice).
 
 ## Features
 
@@ -112,6 +124,7 @@ Potential future enhancements include:
 * Downloadable specimen sheets
 * OpenType feature controls
 * Additional automated test coverage
+* Refine the responsive experience
 
 ## Technology
 
@@ -122,9 +135,6 @@ Potential future enhancements include:
 * React Testing Library
 
 ---
-
-This project represents the intersection of my interests in software engineering, typography, and user experience. It demonstrates how thoughtful frontend architecture can support an interface that is both flexible for developers and approachable for users.
-
 
 # My Portfolio and React Practice
 
